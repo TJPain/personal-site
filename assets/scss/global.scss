@@ -1,0 +1,91 @@
+/* Reset CSS */
+
+*, *:before, *:after{
+    box-sizing: border-box;
+  }
+  
+  html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  footer, header, nav, section, main{
+    display: block;
+  }
+  
+  body{
+    line-height: 1;
+  }
+  
+  ol, ul{
+    list-style: none;
+  }
+  
+  blockquote, q{
+    quotes: none;
+  }
+  
+  blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+  }
+  
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  input{
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+  
+  /* Site-wide style CSS */
+  
+  body {
+    background-color: #fff;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #464860;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-block-end: 16px;
+  }
+  
+  li {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #464860;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: blue;
+    font-family: 'Rubik', sans-serif;
+  }
+  
