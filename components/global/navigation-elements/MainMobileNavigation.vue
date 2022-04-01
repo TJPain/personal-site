@@ -15,13 +15,19 @@
     </div>
     <div class="n-mobile__submenu" :class="{ active: mobileMenu }">
       <div class="n-mobile__fscreen">
+        <div class="n-fscreen__link">
+          <a href="/about/"> About </a>
+        </div>
+        <div class="n-fscreen__link">
+          <a href="/cv/"> CV </a>
+        </div>
         <div
           class="n-fscreen__link"
           :class="{ active: aboutSelected }"
           @click="selectMobileSubmenu('aboutSelected')"
         >
           <div class="n-not__selected">
-            About Us
+            Portfolio
             <img
               src="@/assets/images/header/arrow-right.svg"
               alt="arrow"
@@ -37,65 +43,9 @@
               />
               Back
             </span>
-            <span class="n-selected__title">About Us</span>
+            <span class="n-selected__title">Portfolio</span>
             <div v-show="aboutSelected" class="n-about__selected">
               <AboutSubmenu />
-            </div>
-          </div>
-        </div>
-        <div
-          class="n-fscreen__link"
-          :class="{ active: skiSelected }"
-          @click="selectMobileSubmenu('skiSelected')"
-        >
-          <div class="n-not__selected">
-            Ski
-            <img
-              src="@/assets/images/header/arrow-right.svg"
-              alt="arrow"
-              class="n-arrow__right"
-            />
-          </div>
-          <div class="n-selected">
-            <span class="n-selected__back" @click.stop="backMobileMenu">
-              <img
-                src="@/assets/images/header/arrow-left.svg"
-                alt="arrow"
-                class="n-arrow__right"
-              />
-              Back
-            </span>
-            <span class="n-selected__title">Ski</span>
-            <div v-show="skiSelected" class="n-ski__selected">
-              <SkiSubmenu />
-            </div>
-          </div>
-        </div>
-        <div
-          class="n-fscreen__link"
-          :class="{ active: citySelected }"
-          @click="selectMobileSubmenu('citySelected')"
-        >
-          <div class="n-not__selected">
-            City & sun
-            <img
-              src="@/assets/images/header/arrow-right.svg"
-              alt="arrow"
-              class="n-arrow__right"
-            />
-          </div>
-          <div class="n-selected">
-            <span class="n-selected__back" @click.stop="backMobileMenu">
-              <img
-                src="@/assets/images/header/arrow-left.svg"
-                alt="arrow"
-                class="n-arrow__right"
-              />
-              Back
-            </span>
-            <span class="n-selected__title">City & sun</span>
-            <div v-show="citySelected" class="n-city__selected">
-              <CitySubmenu />
             </div>
           </div>
         </div>
@@ -106,21 +56,15 @@
 
 <script>
 import AboutSubmenu from '@/components/global/navigation-elements/dropdown-elements/AboutSubmenu'
-import CitySubmenu from '@/components/global/navigation-elements/dropdown-elements/CitySubmenu'
-import SkiSubmenu from '@/components/global/navigation-elements/dropdown-elements/SkiSubmenu'
 export default {
   name: 'MainMobileNavigation',
   components: {
     AboutSubmenu,
-    CitySubmenu,
-    SkiSubmenu,
   },
   data() {
     return {
       mobileMenu: false,
       aboutSelected: false,
-      skiSelected: false,
-      citySelected: false,
     }
   },
   methods: {
@@ -134,8 +78,6 @@ export default {
     },
     backMobileMenu() {
       this.aboutSelected = false
-      this.skiSelected = false
-      this.citySelected = false
     },
   },
 }
@@ -305,6 +247,10 @@ export default {
   }
   .n-selected__back {
     margin: 0 0 16px 0;
+    display: flex;
+  }
+  .n-arrow__right {
+    margin-right: 8px;
   }
   .n-mobile__sscreen {
     display: none;

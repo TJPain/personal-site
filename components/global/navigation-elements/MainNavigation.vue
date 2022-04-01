@@ -2,10 +2,10 @@
   <nav class="n-main__navigation">
     <ul class="n-navigation__list">
       <li class="n-navigation__item">
-        <a href="#">About</a>
+        <a href="/about/">About</a>
       </li>
       <li class="n-navigation__item">
-        <a href="#">CV</a>
+        <a href="/cv/">CV</a>
       </li>
       <li class="n-navigation__item">
         <span>Portfolio</span>
