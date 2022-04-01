@@ -1,7 +1,7 @@
 <template>
   <div class="n-mobile__navigation">
     <a href="mailto:hello@tompa.in" class="n-navigation__cta n-mobile__cta"
-      >Email Tom</a
+      >Say hello</a
     >
     <div
       class="mobileButton"
@@ -315,6 +315,11 @@ export default {
     min-width: calc(100% + 48px);
     padding: 16px 0 0 0;
     border-top: 1px solid #e4e4e4;
+  }
+  @media all and (max-width: 370px) {
+    .n-mobile__cta {
+      display: none;
+    }
   }
 }
 </style>

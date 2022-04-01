@@ -57,6 +57,7 @@ export default {
 .header__logo-container {
   display: block;
   width: auto;
+  cursor: pointer;
 }
 .header__logo-text {
   color: #4f2d87;

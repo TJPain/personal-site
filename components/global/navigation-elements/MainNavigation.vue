@@ -15,12 +15,12 @@
       </li>
       <li v-if="!whiteCta" class="">
         <a href="mailto:hello@tompa.in" class="n-navigation__cta"
-          >Email Tom</a
+          >Say hello</a
         >
       </li>
       <li v-if="whiteCta" class="">
         <a href="mailto:hello@tompa.in" class="n-navigation__cta-white"
-          >Email Tom</a
+          >Say hello</a
         >
       </li>
     </ul>

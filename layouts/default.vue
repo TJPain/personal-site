@@ -2,16 +2,19 @@
   <div class="default-layout">
     <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '../sections/global/Header.vue'
+import Footer from '../sections/global/Footer.vue'
 
 export default {
   name: 'default-layout',
   components: {
     Header,
+    Footer,
   },
 }
 </script>

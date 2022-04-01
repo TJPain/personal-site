@@ -43,7 +43,7 @@
       </div>
       <div class="n-submenu__column">
         <a href="/app/"
-          ><h3 class="n-submenu__title n-submenu__link__hover">App</h3></a
+          ><h3 class="n-submenu__title n-submenu__link__hover">Back end</h3></a
         >
         <p class="n-submenu__apptext">
           Quickly agree the perfect plan for your trip
