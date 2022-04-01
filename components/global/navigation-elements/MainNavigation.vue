@@ -2,16 +2,14 @@
   <nav class="n-main__navigation">
     <ul class="n-navigation__list">
       <li class="n-navigation__item">
-        <span>About us</span>
+        <a href="#">About</a>
+      </li>
+      <li class="n-navigation__item">
+        <a href="#">CV</a>
+      </li>
+      <li class="n-navigation__item">
+        <span>Portfolio</span>
         <AboutSubmenu />
-      </li>
-      <li class="n-navigation__item">
-        <span>Ski</span>
-        <SkiSubmenu />
-      </li>
-      <li class="n-navigation__item">
-        <span>City & Sun</span>
-        <CitySubmenu />
       </li>
       <li v-if="!whiteCta" class="">
         <a href="mailto:hello@tompa.in" class="n-navigation__cta"
@@ -29,14 +27,10 @@
 
 <script>
 import AboutSubmenu from '@/components/global/navigation-elements/dropdown-elements/AboutSubmenu'
-import CitySubmenu from '@/components/global/navigation-elements/dropdown-elements/CitySubmenu'
-import SkiSubmenu from '@/components/global/navigation-elements/dropdown-elements/SkiSubmenu'
 export default {
   name: 'MainNavigation',
   components: {
     AboutSubmenu,
-    CitySubmenu,
-    SkiSubmenu,
   },
   props: {
     whiteCta: {
