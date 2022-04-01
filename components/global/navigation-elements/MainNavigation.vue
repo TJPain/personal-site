@@ -2,19 +2,17 @@
   <nav class="n-main__navigation">
     <ul class="n-navigation__list">
       <li class="n-navigation__item">
-        <a href="/about/">About</a>
+        <a class="navigation__text" href="/about/">About</a>
       </li>
       <li class="n-navigation__item">
-        <a href="/cv/">CV</a>
+        <a class="navigation__text" href="/cv/">CV</a>
       </li>
       <li class="n-navigation__item">
         <span>Portfolio</span>
         <AboutSubmenu />
       </li>
       <li v-if="!whiteCta" class="">
-        <a href="mailto:hello@tompa.in" class="n-navigation__cta"
-          >Say hello</a
-        >
+        <a href="mailto:hello@tompa.in" class="n-navigation__cta">Say hello</a>
       </li>
       <li v-if="whiteCta" class="">
         <a href="mailto:hello@tompa.in" class="n-navigation__cta-white"
@@ -64,6 +62,9 @@ export default {
     border-top: 3px solid #4f2d87;
     background: #f8f8ff;
   }
+  &:visited {
+    color: #464860;
+  }
   & span:hover {
     cursor: pointer;
   }
@@ -79,6 +80,12 @@ export default {
     z-index: 1000;
     border-top: 1px solid #e4e4e4;
     pointer-events: all;
+  }
+}
+.navigation__text {
+  color: #464860;
+  &:visited {
+    color: #464860;
   }
 }
 .n-navigation__link {
