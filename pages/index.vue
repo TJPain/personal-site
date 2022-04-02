@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HeroBanner />
-    <p class="some-text" style="margin-top: 200px; background: white;">
+    <p class="some-text" style="margin-top: 200px; background: white">
       orem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -18,10 +18,10 @@
 <script>
 import HeroBanner from '@/components/home/HeroBanner'
 export default {
-  layout: 'DefaultLayout',
   components: {
     HeroBanner,
   },
+  layout: 'DefaultLayout',
   head() {
     return {
       title: 'Tom Pain | Full stack developer | MSc Computer Science',

@@ -1,11 +1,15 @@
 <template>
   <div class="cv">
-    <p class="some-text" style="margin-top: 200px">This is a CV... probably</p>
+    <CvLayout />
   </div>
 </template>
 
 <script>
+import CvLayout from '@/sections/cv/CvLayout'
 export default {
+  components: {
+    CvLayout,
+  },
   layout: 'DefaultLayout',
   head() {
     return {
