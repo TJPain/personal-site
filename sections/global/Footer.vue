@@ -73,6 +73,7 @@ export default {
   width: 100%;
   margin-top: 140px;
   padding: 10px 0 0 0;
+  background-color: #fff;
 }
 
 .footer__top--container {

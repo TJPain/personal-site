@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  layout: 'default-layout',
+  layout: 'DefaultLayout',
   head() {
     return {
       title: 'Tom Pain | Full stack developer | MSc Computer Science',

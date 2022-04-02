@@ -4,14 +4,14 @@
       <a href="mailto:hello@tompa.in" target="_blank">
         <img
           src="@/assets/images/footer/tp-email.png"
-          alt="The instagram logo"
+          alt="an email icon"
           class="footer__bottom--social--btn footer__bottom--img"
         />
       </a>
       <a href="https://github.com/TJPain" target="_blank">
         <img
           src="@/assets/images/footer/tp-git.png"
-          alt="The facebook logo"
+          alt="The github logo"
           class="footer__bottom--social--btn footer__bottom--img"
         />
       </a>

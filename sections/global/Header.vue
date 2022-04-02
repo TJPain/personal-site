@@ -89,6 +89,7 @@ export default {
   margin-right: 6px;
   top: 4px;
   position: relative;
+  margin-bottom: 3px;
 }
 
 @media all and (min-width: 668px) and (max-width: 1270px) {

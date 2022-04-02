@@ -1,5 +1,5 @@
 <template>
-  <div class="default-layout">
+  <div class="DefaultLayout">
     <Header />
     <Nuxt />
     <Footer />
@@ -11,7 +11,7 @@ import Header from '../sections/global/Header.vue'
 import Footer from '../sections/global/Footer.vue'
 
 export default {
-  name: 'default-layout',
+  name: 'DefaultLayout',
   components: {
     Header,
     Footer,
