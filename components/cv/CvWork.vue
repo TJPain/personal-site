@@ -20,7 +20,7 @@
         </div>
         <div v-if="job.company" class="jobs__accordion-item-body">
           <div class="jobs__accordion-item-body-content">
-            <div class="jobs__accordion-link-item" v-if="job.href">
+            <div v-if="job.href" class="jobs__accordion-link-item">
               <p>Website:</p>
               <a
                 :href="job.href"
@@ -36,7 +36,7 @@
           <div v-if="job.achievements" class="jobs__accordion-achievements">
             <p class="jobs__achievements-title">Key achievements:</p>
             <ul class="jobs__achievements-list">
-              <li v-for="(item, index) in job.achievements" :key="index">
+              <li v-for="(item, i) in job.achievements" :key="i">
                 <div>{{ item }}</div>
               </li>
             </ul>
@@ -44,19 +44,16 @@
         </div>
         <div v-else class="jobs__accordion-item-body">
           <div class="jobs__others">
-            <div
-              v-for="(other, index) in others"
-              :key="index"
-              class="jobs__others-item"
-            >
-              <div class="jobs__others-title">
-                <span class="jobs__others-title-bold"
-                  >{{ other.company }} - {{ other.title }}</span
-                >
-                ({{ other.dates }})
-              </div>
-              <div class="jobs__others-text">{{ other.text }}</div>
-            </div>
+            <ul v-for="(other, i) in others" :key="i" class="jobs__others-item">
+              <li>
+                <div class="jobs__others-title">
+                  <span class="jobs__others-title-bold"
+                    >{{ other.company }} - {{ other.title }}</span
+                  >
+                  ({{ other.dates }}): {{ other.text }}
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -269,7 +266,10 @@ export default {
   padding-top: 16px;
 }
 .jobs__others-item {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-left: 0;
 }
 .jobs__others-title-bold {
   font-weight: 600;

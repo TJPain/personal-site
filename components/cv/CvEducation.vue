@@ -28,7 +28,7 @@
         <div v-if="qual.institution" class="edu__accordion-item-body">
           <div v-if="qual.bullets" class="edu__accordion-achievements">
             <ul class="edu__achievements-list">
-              <li v-for="(item, index) in qual.bullets" :key="index">
+              <li v-for="(item, i) in qual.bullets" :key="i">
                 <div>{{ item }}</div>
               </li>
             </ul>
@@ -36,15 +36,11 @@
         </div>
         <div v-else class="edu__accordion-item-body">
           <div class="edu__others">
-            <div
-              v-for="(other, index) in others"
-              :key="index"
-              class="edu__others-item"
-            >
-              <div class="edu__others-title">
+            <ul v-for="(other, i) in others" :key="i" class="edu__others-item">
+              <li class="edu__others-title">
                 {{ other.dates }}: {{ other.institution }} - {{ other.title }}
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -259,7 +255,10 @@ export default {
   padding-top: 16px;
 }
 .edu__others-item {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-left: 0;
 }
 .edu__others-title-bold {
   font-weight: 600;
