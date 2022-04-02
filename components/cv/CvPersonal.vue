@@ -1,82 +1,84 @@
 <template>
-  <div class="cv__personal-container">
-    <div class="cv__personal-img-container">
-      <img
-        src="@/assets/images/cv/tom-pain.jpg"
-        alt="Tom Pain"
-        class="cv__portrait"
-      />
-      <h1 class="cv__personal-title">Tom Pain</h1>
-    </div>
-    <div class="cv__contact-container">
-      <div class="cv__contact-details">
+  <div class="cv__personal">
+    <div class="cv__personal-container">
+      <div class="cv__personal-img-container">
         <img
-          src="@/assets/images/cv/briefcase-purple.png"
-          alt="a briefcase icon"
-          class="cv__contact-icon"
+          src="@/assets/images/cv/tom-pain.jpg"
+          alt="Tom Pain"
+          class="cv__portrait"
         />
-        <p class="cv__contact-text">Full stack developer</p>
+        <h1 class="cv__personal-title">Tom Pain</h1>
       </div>
-      <div class="cv__contact-details">
-        <img
-          src="@/assets/images/cv/home-purple.png"
-          alt="an icon of a house"
-          class="cv__contact-icon"
-        />
-        <p class="cv__contact-text">Nottingham, UK</p>
+      <div class="cv__contact-container">
+        <div class="cv__contact-details">
+          <img
+            src="@/assets/images/cv/briefcase-purple.png"
+            alt="a briefcase icon"
+            class="cv__contact-icon"
+          />
+          <p class="cv__contact-text">Full stack developer</p>
+        </div>
+        <div class="cv__contact-details">
+          <img
+            src="@/assets/images/cv/home-purple.png"
+            alt="an icon of a house"
+            class="cv__contact-icon"
+          />
+          <p class="cv__contact-text">Nottingham, UK</p>
+        </div>
+        <div class="cv__contact-details">
+          <img
+            src="@/assets/images/cv/email-purple.png"
+            alt="an email icon"
+            class="cv__contact-icon"
+          />
+          <a href="mailto:hello@tompa.in" class="cv__contact-text contact-link"
+            >hello@tompa.in</a
+          >
+        </div>
+        <div class="cv__contact-details">
+          <img
+            src="@/assets/images/cv/github-purple.png"
+            alt="The GitHub logo"
+            class="cv__contact-icon"
+          />
+          <a
+            href="https://github.com/TJPain"
+            target="_blank"
+            class="cv__contact-text contact-link"
+            >GitHub</a
+          >
+        </div>
+        <div class="cv__contact-details">
+          <img
+            src="@/assets/images/cv/linkedin-purple.png"
+            alt="the LinkedIn logo"
+            class="cv__contact-icon"
+          />
+          <a
+            href="http://uk.linkedin.com/in/tjpain"
+            target="_blank"
+            class="cv__contact-text contact-link"
+            >LinkedIn</a
+          >
+        </div>
       </div>
-      <div class="cv__contact-details">
-        <img
-          src="@/assets/images/cv/email-purple.png"
-          alt="an email icon"
-          class="cv__contact-icon"
-        />
-        <a href="mailto:hello@tompa.in" class="cv__contact-text"
-          >hello@tompa.in</a
-        >
+      <div class="cv__bio">
+        <p class="bio__text">
+          I have spent the last five years building a travel start-up where I
+          was responsible for technology and product. When the pandemic started,
+          I decided to build upon this hands-on development experience with a
+          part-time MSc in Computer Science with Artificial Intelligence, which
+          I have almost finished. I am now looking for a full- time engineering
+          role where I can continue to learn and gain experience working
+          throughout the stack, ideally for a web-based, consumer business.
+        </p>
+        <p class="bio__text">
+          Most of my experience is with Vue.js / Nuxt.js and Python including
+          NumPy, pandas, Matplotlib, SciPy and scikit-learn. I also have
+          experience with Django, SQL, GraphQL, Java and Git.
+        </p>
       </div>
-      <div class="cv__contact-details">
-        <img
-          src="@/assets/images/cv/github-purple.png"
-          alt="The GitHub logo"
-          class="cv__contact-icon"
-        />
-        <a
-          href="https://github.com/TJPain"
-          target="_blank"
-          class="cv__contact-text"
-          >GitHub</a
-        >
-      </div>
-      <div class="cv__contact-details">
-        <img
-          src="@/assets/images/cv/linkedin-purple.png"
-          alt="the LinkedIn logo"
-          class="cv__contact-icon"
-        />
-        <a
-          href="http://uk.linkedin.com/in/tjpain"
-          target="_blank"
-          class="cv__contact-text"
-          >LinkedIn</a
-        >
-      </div>
-    </div>
-    <div class="cv__bio">
-      <p class="bio__text">
-        I have spent the last five years building a travel start-up where I was
-        responsible for technology and product. When the pandemic started, I
-        decided to build upon this hands-on development experience with a
-        part-time MSc in Computer Science with Artificial Intelligence, which I
-        have almost finished. I am now looking for a full- time engineering role
-        where I can continue to learn and gain experience working throughout the
-        stack, ideally for a web-based, consumer business.
-      </p>
-      <p class="bio__text">
-        Most of my experience is with Vue.js / Nuxt.js and Python including
-        NumPy, pandas, Matplotlib, SciPy and scikit-learn. I also have
-        experience with Django, SQL, GraphQL, Java and Git.
-      </p>
     </div>
   </div>
 </template>
@@ -88,9 +90,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.cv__personal {
+  height: auto;
+}
 .cv__personal-container {
   border-radius: 10px;
-  min-height: 400px;
+  min-height: 200px;
   width: 100%;
   height: auto;
   background-color: #fff;
@@ -136,6 +141,13 @@ export default {
 .cv__contact-text {
   margin-bottom: unset;
   color: #464860;
+}
+.contact-link {
+  cursor: pointer;
+  transition: all ease 0.5;
+  &:hover {
+    color: #4f2d87;
+  }
 }
 .cv__bio {
   padding: 20px;

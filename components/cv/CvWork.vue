@@ -11,13 +11,14 @@
       >
         <div class="jobs__accordion-item-header">
           <div class="jobs__accordion-overview-container">
-            <div class="jobs__accordion-company-title">
+            <div v-if="job.company" class="jobs__accordion-company-title">
               {{ job.company }} - {{ job.title }}
             </div>
+            <div v-else class="jobs__accordion-company-title">Other roles</div>
             <div class="jobs__accordion-dates">{{ job.dates }}</div>
           </div>
         </div>
-        <div class="jobs__accordion-item-body">
+        <div v-if="job.company" class="jobs__accordion-item-body">
           <div class="jobs__accordion-item-body-content">
             <div class="jobs__accordion-link-item" v-if="job.href">
               <p>Website:</p>
@@ -39,6 +40,23 @@
                 <div>{{ item }}</div>
               </li>
             </ul>
+          </div>
+        </div>
+        <div v-else class="jobs__accordion-item-body">
+          <div class="jobs__others">
+            <div
+              v-for="(other, index) in others"
+              :key="index"
+              class="jobs__others-item"
+            >
+              <div class="jobs__others-title">
+                <span class="jobs__others-title-bold"
+                  >{{ other.company }} - {{ other.title }}</span
+                >
+                ({{ other.dates }})
+              </div>
+              <div class="jobs__others-text">{{ other.text }}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -78,8 +96,7 @@ export default {
         },
         {
           company: 'Oliver James Associates',
-          title:
-            'Associate Director',
+          title: 'Associate Director',
           href: 'https://www.oliverjames.com/',
           dates: 'January 2015 - December 2016',
           text: `<p style="margin-bottom: unset">Following success in Actuarial, Risk & Compliance, Finance, and Change Management, I was approached by OJA to establish a new Digital desk. On the back of strong sales and bottom-line performance for the Digital team, I started Design & Engineering and Marketing recruitment teams which I managed concurrently. I was promoted three times in two years and managed a team of 14 people. I also led the UK-wide diversification into non-Financial Services sectors.</p>`,
@@ -99,6 +116,29 @@ export default {
           dates: 'May 2011 - September 2013',
           text: `<p>Outgoing is an independent travel company that carried over 40,000 passengers per year. I was employed in a sales role but was quickly promoted to Product Manager for the Ski division where I was responsible for the department’s financial performance, leading the sales team, delivering all aspects of the passenger experience, managing a team of up to 110 seasonal staff as well as six full time employees, and laying the foundations for future business growth.</p>
           <p style="margin-bottom: unset">Increased passenger numbers from 1,600 in 2010/11 to almost 15,000 passengers in 2012/13, transforming the department’s financial performance from a small loss to a net profit of £280,000 for the 2012/13 season.</p>`,
+        },
+        {
+          others: true,
+        },
+      ],
+      others: [
+        {
+          company: 'Sisu Capital Ltd',
+          title: 'Intern, Distressed Debt and Operations',
+          dates: 'December 2007 - February 2008',
+          text: 'Internship at a distressed debt hedge fund',
+        },
+        {
+          company: '3D Currency Management',
+          title: 'Intern',
+          dates: 'September 2007 - October 2007',
+          text: 'Internship at a hedge fund trading securitised debt in the FX market.',
+        },
+        {
+          company: 'Sigma Wealth Management',
+          title: 'Intern and continued part-time work',
+          dates: 'July 2007 - August 2009',
+          text: 'An IFA for high-net-worth individuals. I developed a model to track fund-based renewal, researched new investment opportunities and assisted with report writing and due diligence.',
         },
       ],
     }
@@ -129,13 +169,13 @@ export default {
   width: 100%;
   max-width: 1000px;
   margin: 32px auto;
+  border-bottom: 1px solid #e4e4e4;
 }
 .jobs__accordion-item {
   background-color: #fff;
   color: #464860;
   border-top: 1px solid #e4e4e4;
 }
-
 .jobs__accordion-item-header {
   padding: 8px 48px 8px 0;
   min-height: 56px;
@@ -169,7 +209,7 @@ export default {
 .jobs__accordion-item-body {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s linear;
 }
 .opened .jobs__accordion-item-body {
   opacity: 1;
@@ -223,5 +263,15 @@ export default {
   list-style-type: disc;
   margin-left: 0;
   padding-left: 20px;
+}
+.jobs__others {
+  border-top: 1px solid #e4e4e4;
+  padding-top: 16px;
+}
+.jobs__others-item {
+  margin-bottom: 16px;
+}
+.jobs__others-title-bold {
+  font-weight: 600;
 }
 </style>
