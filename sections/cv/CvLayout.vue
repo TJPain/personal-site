@@ -2,7 +2,7 @@
   <div class="cv__layout-columns" data-aos="fade-right " data-aos-once="true">
     <CvPersonal />
     <div class="cv__layout-rows" data-aos="fade-up " data-aos-once="true">
-      <div class="cv__experience-container">jobs</div>
+      <div class="cv__experience-container"><CvWork /></div>
       <div class="cv__experience-container">education</div>
     </div>
   </div>
@@ -10,10 +10,12 @@
 
 <script>
 import CvPersonal from '@/components/cv/CvPersonal'
+import CvWork from '@/components/cv/CvWork'
 export default {
   name: 'CvLayout',
   components: {
     CvPersonal,
+    CvWork,
   },
 }
 </script>
