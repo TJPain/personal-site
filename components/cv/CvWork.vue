@@ -189,7 +189,7 @@ export default {
   font-weight: 600;
 }
 .jobs__accordion-item-header:hover {
-  color: grey;
+  color: #4f2d87;
 }
 .jobs__accordion-item-header::after {
   content: url(~@/assets/images/icons/accordion-down.svg);

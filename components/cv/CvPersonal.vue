@@ -1,66 +1,70 @@
 <template>
   <div class="cv__personal">
     <div class="cv__personal-container">
-      <div class="cv__personal-img-container">
-        <img
-          src="@/assets/images/cv/tom-pain.jpg"
-          alt="Tom Pain"
-          class="cv__portrait"
-        />
-        <h1 class="cv__personal-title">Tom Pain</h1>
-      </div>
-      <div class="cv__contact-container">
-        <div class="cv__contact-details">
+      <div class="cv__personal-img-contact">
+        <div class="cv__personal-img-container">
           <img
-            src="@/assets/images/cv/briefcase-purple.png"
-            alt="a briefcase icon"
-            class="cv__contact-icon"
+            src="@/assets/images/cv/tom-pain.jpg"
+            alt="Tom Pain"
+            class="cv__portrait"
           />
-          <p class="cv__contact-text">Full stack developer</p>
+          <h1 class="cv__personal-title">Tom Pain</h1>
         </div>
-        <div class="cv__contact-details">
-          <img
-            src="@/assets/images/cv/home-purple.png"
-            alt="an icon of a house"
-            class="cv__contact-icon"
-          />
-          <p class="cv__contact-text">Nottingham, UK</p>
-        </div>
-        <div class="cv__contact-details">
-          <img
-            src="@/assets/images/cv/email-purple.png"
-            alt="an email icon"
-            class="cv__contact-icon"
-          />
-          <a href="mailto:hello@tompa.in" class="cv__contact-text contact-link"
-            >hello@tompa.in</a
-          >
-        </div>
-        <div class="cv__contact-details">
-          <img
-            src="@/assets/images/cv/github-purple.png"
-            alt="The GitHub logo"
-            class="cv__contact-icon"
-          />
-          <a
-            href="https://github.com/TJPain"
-            target="_blank"
-            class="cv__contact-text contact-link"
-            >GitHub</a
-          >
-        </div>
-        <div class="cv__contact-details">
-          <img
-            src="@/assets/images/cv/linkedin-purple.png"
-            alt="the LinkedIn logo"
-            class="cv__contact-icon"
-          />
-          <a
-            href="http://uk.linkedin.com/in/tjpain"
-            target="_blank"
-            class="cv__contact-text contact-link"
-            >LinkedIn</a
-          >
+        <div class="cv__contact-container">
+          <div class="cv__contact-details">
+            <img
+              src="@/assets/images/cv/briefcase-purple.png"
+              alt="a briefcase icon"
+              class="cv__contact-icon"
+            />
+            <p class="cv__contact-text">Full stack developer</p>
+          </div>
+          <div class="cv__contact-details">
+            <img
+              src="@/assets/images/cv/home-purple.png"
+              alt="an icon of a house"
+              class="cv__contact-icon"
+            />
+            <p class="cv__contact-text">Nottingham, UK</p>
+          </div>
+          <div class="cv__contact-details">
+            <img
+              src="@/assets/images/cv/email-purple.png"
+              alt="an email icon"
+              class="cv__contact-icon"
+            />
+            <a
+              href="mailto:hello@tompa.in"
+              class="cv__contact-text contact-link"
+              >hello@tompa.in</a
+            >
+          </div>
+          <div class="cv__contact-details">
+            <img
+              src="@/assets/images/cv/github-purple.png"
+              alt="The GitHub logo"
+              class="cv__contact-icon"
+            />
+            <a
+              href="https://github.com/TJPain"
+              target="_blank"
+              class="cv__contact-text contact-link"
+              >GitHub</a
+            >
+          </div>
+          <div class="cv__contact-details">
+            <img
+              src="@/assets/images/cv/linkedin-purple.png"
+              alt="the LinkedIn logo"
+              class="cv__contact-icon"
+            />
+            <a
+              href="http://uk.linkedin.com/in/tjpain"
+              target="_blank"
+              class="cv__contact-text contact-link"
+              >LinkedIn</a
+            >
+          </div>
         </div>
       </div>
       <div class="cv__bio">
@@ -151,5 +155,45 @@ export default {
 }
 .cv__bio {
   padding: 20px;
+}
+@media all and (max-width: 750px) {
+  .cv__personal-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .cv__personal-img-contact {
+    border-right: 1px solid #e4e4e4;
+    width: 40%;
+  }
+  .cv__contact-container {
+    border-bottom: unset;
+  }
+  .cv__portrait {
+    border-radius: 10px 0 0 0;
+  }
+  .cv__bio {
+    width: 60%;
+  }
+}
+@media all and (max-width: 500px) {
+  .cv__personal-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cv__personal-img-contact {
+    border-right: unset;
+    width: 100%;
+  }
+  .cv__contact-container {
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .cv__portrait {
+    border-radius: 10px 10px 0 0;
+  }
+  .cv__bio {
+    width: 100%;
+  }
 }
 </style>
