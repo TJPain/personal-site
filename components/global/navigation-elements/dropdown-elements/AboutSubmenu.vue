@@ -2,7 +2,7 @@
   <div class="n-submenu__container">
     <div class="n-submenu__grid">
       <div class="n-submenu__column">
-        <a href="/our-story/"
+        <a href="#"
           ><h3 class="n-submenu__title n-submenu__link__hover">
             Front end
           </h3></a
@@ -10,31 +10,31 @@
         <ul class="n-submenu__list">
           <li class="n-submenu__item">
             <a
-              href="/how-it-works/"
+              href="#"
               class="n-submenu__link n-submenu__link__hover"
               >How it works</a
             >
           </li>
           <li class="n-submenu__item">
-            <a href="/our-story/" class="n-submenu__link n-submenu__link__hover"
+            <a href="#" class="n-submenu__link n-submenu__link__hover"
               >Our story</a
             >
           </li>
           <li class="n-submenu__item">
             <a
-              href="/group-holidays/"
+              href="#"
               class="n-submenu__link n-submenu__link__hover"
               >Our group holidays</a
             >
           </li>
           <li class="n-submenu__item">
-            <a href="/faqs/" class="n-submenu__link n-submenu__link__hover"
+            <a href="#" class="n-submenu__link n-submenu__link__hover"
               >FAQs</a
             >
           </li>
           <li class="n-submenu__item">
             <a
-              href="/thecalmzone/"
+              href="#"
               class="n-submenu__link n-submenu__link__hover"
               >CALM</a
             >
@@ -42,13 +42,13 @@
         </ul>
       </div>
       <div class="n-submenu__column">
-        <a href="/app/"
+        <a href="#"
           ><h3 class="n-submenu__title n-submenu__link__hover">Back end</h3></a
         >
         <p class="n-submenu__apptext">
           Quickly agree the perfect plan for your trip
         </p>
-        <a href="/app/" class="n-submenu__applink">
+        <a href="#" class="n-submenu__applink">
           Find out more
           <svg
             class="n-submenu__appicon"
@@ -66,7 +66,7 @@
         </a>
         <div class="n-submenu__appimages">
           <div class="n-submenu__imagewrap">
-            <a target="_blank" href="https://packed.app.link/play-store">
+            <a target="_blank" href="#">
               <img
                 src="@/assets/images/services-logos/GoogleplayButton.svg"
                 alt="google store"
@@ -74,7 +74,7 @@
             </a>
           </div>
           <div class="n-submenu__imagewrap">
-            <a target="_blank" href="https://packed.app.link/app-store">
+            <a target="_blank" href="#">
               <img
                 src="@/assets/images/services-logos/AppStoreButton.svg"
                 alt="app store"
@@ -84,13 +84,13 @@
         </div>
       </div>
       <div class="n-submenu__column">
-        <a href="/blog/"
+        <a href="#"
           ><h3 class="n-submenu__title n-submenu__link__hover">Blog</h3></a
         >
         <ul class="n-submenu__bloglist">
           <li class="n-submenu__blogitem">
             <a
-              href="/blog/how-to-plan-a-group-holiday/"
+              href="#"
               class="n-submenu__bloglink n-submenu__link__hover"
             >
               <img
@@ -103,7 +103,7 @@
           </li>
           <li class="n-submenu__blogitem">
             <a
-              href="/blog/10-things-to-take-on-every-group-holiday/"
+              href="#"
               class="n-submenu__bloglink n-submenu__link__hover"
             >
               <img
@@ -116,7 +116,7 @@
           </li>
           <li class="n-submenu__blogitem">
             <a
-              href="/blog/ten-people-in-every-whatsapp-group-and-how-to-avoid-them-2/"
+              href="#"
               class="n-submenu__bloglink n-submenu__link__hover"
             >
               <img
@@ -128,7 +128,7 @@
             </a>
           </li>
         </ul>
-        <a href="/blog/" class="n-submenu__applink">
+        <a href="#" class="n-submenu__applink">
           See all blogs
           <svg
             class="n-submenu__appicon"

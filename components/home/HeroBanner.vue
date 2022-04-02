@@ -1,11 +1,13 @@
 <template>
   <div class="hero-banner">
-    <parallax :speed-factor="0.4" class="hero__image">
-      <img
-        src="@/assets/images/home/hero-banner-image.jpg"
-        alt="mountains in the sun"
-      />
-    </parallax>
+    <client-only>
+      <parallax :speed-factor="0.4" class="hero__image">
+        <img
+          src="@/assets/images/home/hero-banner-image.jpg"
+          alt="mountains in the sun"
+        />
+      </parallax>
+    </client-only>
     <div class="hero__contents-wrapper">
       <div class="hero__textbox-wrapper">
         <div
