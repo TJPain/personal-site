@@ -1,0 +1,143 @@
+<template>
+  <div class="cv__personal-container">
+    <div class="cv__personal-img-container">
+      <img
+        src="@/assets/images/cv/tom-pain.jpg"
+        alt="Tom Pain"
+        class="cv__portrait"
+      />
+      <h1 class="cv__personal-title">Tom Pain</h1>
+    </div>
+    <div class="cv__contact-container">
+      <div class="cv__contact-details">
+        <img
+          src="@/assets/images/cv/briefcase-purple.png"
+          alt="a briefcase icon"
+          class="cv__contact-icon"
+        />
+        <p class="cv__contact-text">Full stack developer</p>
+      </div>
+      <div class="cv__contact-details">
+        <img
+          src="@/assets/images/cv/home-purple.png"
+          alt="an icon of a house"
+          class="cv__contact-icon"
+        />
+        <p class="cv__contact-text">Nottingham, UK</p>
+      </div>
+      <div class="cv__contact-details">
+        <img
+          src="@/assets/images/cv/email-purple.png"
+          alt="an email icon"
+          class="cv__contact-icon"
+        />
+        <a href="mailto:hello@tompa.in" class="cv__contact-text"
+          >hello@tompa.in</a
+        >
+      </div>
+      <div class="cv__contact-details">
+        <img
+          src="@/assets/images/cv/github-purple.png"
+          alt="The GitHub logo"
+          class="cv__contact-icon"
+        />
+        <a
+          href="https://github.com/TJPain"
+          target="_blank"
+          class="cv__contact-text"
+          >GitHub</a
+        >
+      </div>
+      <div class="cv__contact-details">
+        <img
+          src="@/assets/images/cv/linkedin-purple.png"
+          alt="the LinkedIn logo"
+          class="cv__contact-icon"
+        />
+        <a
+          href="http://uk.linkedin.com/in/tjpain"
+          target="_blank"
+          class="cv__contact-text"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+    <div class="cv__bio">
+      <p class="bio__text">
+        I have spent the last five years building a travel start-up where I was
+        responsible for technology and product. When the pandemic started, I
+        decided to build upon this hands-on development experience with a
+        part-time MSc in Computer Science with Artificial Intelligence, which I
+        have almost finished. I am now looking for a full- time engineering role
+        where I can continue to learn and gain experience working throughout the
+        stack, ideally for a web-based, consumer business.
+      </p>
+      <p class="bio__text">
+        Most of my experience is with Vue.js / Nuxt.js and Python including
+        NumPy, pandas, Matplotlib, SciPy and scikit-learn. I also have
+        experience with Django, SQL, GraphQL, Java and Git.
+      </p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'CvPersonal',
+}
+</script>
+
+<style lang="scss" scoped>
+.cv__personal-container {
+  border-radius: 10px;
+  min-height: 400px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 7px 18px 5px hsla(0, 0%, 61.2%, 0.16);
+  transition: box-shadow 0.25s linear;
+}
+.cv__personal-img-container {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+.cv__portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.cv__personal-title {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.cv__contact-container {
+  padding: 20px 20px 10px 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.cv__contact-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cv__contact-icon {
+  height: auto;
+  width: 25px;
+  margin-right: 12px;
+}
+.cv__contact-text {
+  margin-bottom: unset;
+  color: #464860;
+}
+.cv__bio {
+  padding: 20px;
+}
+</style>
