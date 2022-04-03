@@ -10,11 +10,7 @@
     </client-only>
     <div class="hero__contents-wrapper">
       <div class="hero__textbox-wrapper">
-        <div
-          class="hero__text-container"
-          data-aos="fade-up "
-          data-aos-once="true"
-        >
+        <div class="hero__text-container">
           <div class="hero__container-top">
             <img
               src="@/assets/images/home/tom-pain.jpg"

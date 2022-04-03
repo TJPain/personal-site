@@ -1,7 +1,7 @@
 <template>
-  <div class="cv__layout-columns" data-aos="fade-right " data-aos-once="true">
+  <div class="cv__layout-columns">
     <CvPersonal />
-    <div class="cv__layout-rows" data-aos="fade-up " data-aos-once="true">
+    <div class="cv__layout-rows">
       <div class="cv__experience-container"><CvWork /></div>
       <div class="cv__experience-container"><CvEducation /></div>
       <div class="cv__experience-container cv__cta-container">

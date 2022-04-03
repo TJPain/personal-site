@@ -11,7 +11,10 @@
       >
         <div class="edu__accordion-item-header">
           <div class="edu__accordion-overview-container">
-            <div v-if="qual.institution">
+            <div v-if="qual.imgSrc" class="edu__logo-container">
+              <img :src="qual.imgSrc" :alt="qual.imgAlt" class="edu__logo" />
+            </div>
+            <div v-if="qual.institution" class="edu__item-text-container">
               <div v-if="qual.grade" class="edu__accordion-company-title">
                 {{ qual.dates }}: {{ qual.institution }} - {{ qual.title }}:
                 {{ qual.grade }}
@@ -59,6 +62,8 @@ export default {
           institution: 'University of York',
           title: 'MSc Computer Science with Artificial Intelligence',
           dates: '2020-2022',
+          imgSrc: '/images/cv/logos/york.png',
+          imgAlt: 'The University of York logo',
           bullets: [
             'Current grade average: 77.3% (distinction) with just the dissertation / research project remaining',
             'Modules: AI and Machine Learning, Applied AI, Algorithms and Data Structures, Advanced Programming, Big Data Analytics, Computer Architecture and Operating Systems, Computer and Mobile Networks, Software Engineering, and an AI-based research project',
@@ -70,6 +75,8 @@ export default {
           title:
             'HarvardX CS50 Computer Science & CS50W Computer Science for Web Programming',
           dates: '2020-2021',
+          imgSrc: '/images/cv/logos/harvard.png',
+          imgAlt: 'The Harvard University logo',
           bullets: [
             'A 6-month course covering two modules using Python, JavaScript, SQL and frameworks like Django and React',
           ],
@@ -79,6 +86,8 @@ export default {
             'University of Pennsylvania, The Wharton Business School',
           title: 'Business Strategy & Entrepreneurship',
           dates: '2016',
+          imgSrc: '/images/cv/logos/wharton.png',
+          imgAlt: 'The University of Pennsylvania Wharton Business School logo',
           bullets: [
             'Part of the Wharton MBA, this is a six month assessed remote learning course',
           ],
@@ -87,6 +96,8 @@ export default {
           institution: 'Durham University',
           title: 'MSc Finance and Investment',
           dates: '2008-2009',
+          imgSrc: '/images/cv/logos/durham.png',
+          imgAlt: 'The Durham University logo',
           grade: 'Merit',
           bullets: [
             'Recognised by the CFA Charter, covering at least 70% of the CFA curriculum',
@@ -96,6 +107,8 @@ export default {
           institution: 'Durham University',
           title: 'BA (Hons) Accounting and Finance',
           dates: '2005-2008',
+          imgSrc: '/images/cv/logos/durham.png',
+          imgAlt: 'The Durham University logo',
           grade: '2:1',
           bullets: [
             'College life member, college Vice President in final year and Entertainments Officer in second year. President of the college Ski Club for two years and organiser of two ski trips. Represented the university at rugby and squash',
@@ -187,6 +200,28 @@ export default {
 .opened .edu__accordion-item-header::after {
   content: url(~@/assets/images/icons/accordion-up.svg);
 }
+.edu__accordion-overview-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.edu__logo-container {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 50%;
+  border: 1px solid #e4e4e4;
+  padding: 18px 12px 12px 12px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edu__logo {
+  width: 100%;
+  height: auto;
+}
 .edu__accordion-dates {
   font-size: 16px;
   font-weight: 400;
@@ -262,5 +297,18 @@ export default {
 }
 .edu__others-title-bold {
   font-weight: 600;
+}
+@media all and (max-width: 750px) {
+  .edu__logo-container {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+  }
+}
+@media all and (max-width: 450px) {
+  .edu__logo-container {
+    display: none;
+  }
 }
 </style>

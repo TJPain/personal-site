@@ -38,10 +38,10 @@
 <script>
 import Pacman from '@/components/about/Pacman'
 export default {
+  name: 'ComingSoon',
   components: {
     Pacman,
   },
-  name: 'ComingSoon',
 }
 </script>
 
