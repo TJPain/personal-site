@@ -1,10 +1,14 @@
 <template>
   <div class="portfolio">
+    <h2 class="portfolio__title">Selected past work</h2>
     <div class="portfolio__cards-container">
       <div
         v-for="(item, index) in portfolio"
         :key="index"
         class="portfolio__card"
+        data-aos="fade-up"
+        :data-aos-delay="200 + index * 100"
+        data-aos-once="true"
       >
         <img
           :src="item.imgSrc"
@@ -28,38 +32,33 @@
             class="portfolio__card-v-html"
             v-html="item.html"
           ></div>
-          <div class="portfolio__git">
-            <a
-              v-if="item.gitLink"
-              :href="item.gitLink"
-              target="_blank"
-              class="portfolio__git-container"
+        </div>
+        <div class="portfolio__git">
+          <a
+            v-if="item.gitLink"
+            :href="item.gitLink"
+            target="_blank"
+            class="portfolio__git-container"
+          >
+            <img
+              src="@/assets/images/icons/github-purple.png"
+              alt="tompa.in"
+              class="portfolio__git-icon"
+            />
+            <a class="portfolio__git-text" :href="item.gitLink" target="_blank"
+              >View on GitHub</a
             >
-              <img
-                src="@/assets/images/icons/github-purple.png"
-                alt="tompa.in"
-                class="portfolio__git-icon"
-              />
-              <a
-                class="portfolio__git-text"
-                :href="item.gitLink"
-                target="_blank"
-                >View on GitHub</a
-              >
-            </a>
-            <div v-else class="portfolio__git-soon-container">
-              <img
-                src="@/assets/images/icons/github-grey.png"
-                alt="tompa.in"
-                class="portfolio__git-soon-icon"
-              />
-              <p v-if="item.comingSoon" class="portfolio__git-soon-text">
-                GitHub link coming soon
-              </p>
-              <p v-else class="portfolio__git-soon-text">
-                Private repository 🤷‍♂️
-              </p>
-            </div>
+          </a>
+          <div v-else class="portfolio__git-soon-container">
+            <img
+              src="@/assets/images/icons/github-grey.png"
+              alt="tompa.in"
+              class="portfolio__git-soon-icon"
+            />
+            <p v-if="item.comingSoon" class="portfolio__git-soon-text">
+              GitHub link coming soon
+            </p>
+            <p v-else class="portfolio__git-soon-text">Private repository 🤷‍♂️</p>
           </div>
         </div>
       </div>
@@ -74,28 +73,83 @@ export default {
     return {
       portfolio: [
         {
-          title: 'Packed website',
-          html: `<p>Tasjfnsajkf aihsf ajshf ahf </p>`,
-          imgSrc: '/images/portfolio/packed-site.jpg',
-          imgAlt: 'A screenshot of the Packed website',
-          tags: ['Nuxt.js', 'Strapi', 'GraphQL', 'Vue Apollo'],
-          private: true,
-        },
-        {
           title: 'ETL and data visualisation application',
-          text: 'auiegfheabf',
+          text: 'I am currently building an ETL application which extracts and cleans CSV data, adds it to a MySQL database, and provides data visulisations to a custom GUI.',
           imgSrc: '/images/portfolio/meme-gen.jpg',
           imgAlt: 'A Python and MySQL code snippet',
           tags: ['Python', 'MySQL', 'pandas', 'NumPy', 'Matplotlib'],
           comingSoon: true,
         },
         {
-          title: 'ETL and data visualisation application',
-          text: 'auiegfheabf',
-          imgSrc: '/images/portfolio/meme-gen.jpg',
-          imgAlt: 'A Python and MySQL code snippet',
-          tags: ['Python', 'MySQL', 'pandas', 'NumPy', 'Matplotlib'],
-          gitLink: 'http://www.google.com/',
+          title: 'Packed website',
+          html: `<p>Packed is my old company (see my <a href="/cv">CV</a>), I built the <a href="https://packed.co/" rel="nofollow" target="_blank" >website</a> with Nuxt.js using Strapi as a headless CMS. It also used Ghost for the blog.</p>`,
+          imgSrc: '/images/portfolio/packed-site.jpg',
+          imgAlt: 'A screenshot of the Packed website',
+          tags: [
+            'Nuxt.js',
+            'Strapi',
+            'GraphQL',
+            'Vue Apollo',
+            'AWS',
+            'Cloudflare',
+          ],
+          private: true,
+        },
+        {
+          title: 'Packed app',
+          text: 'Along with the Packed website, I product managed the Packed apps, which were built with React Native and listed on both the App Store and Play Store.',
+          imgSrc: '/images/portfolio/packed-app.jpg',
+          imgAlt: 'A timeline of the Packed app',
+          tags: ['React Native', 'AWS'],
+          private: true,
+        },
+        {
+          title: 'This site',
+          text: `I built this in a weekend but check out the code if you're interested. It utilises continuous deployment on Netlify and is distributed via Cloudflare.`,
+          imgSrc: '/images/portfolio/personal-site.jpg',
+          imgAlt: 'A screenshot of the tompa.in website',
+          tags: ['Nuxt.js', 'Cloudflare', 'Netlify'],
+          gitLink: 'https://github.com/TJPain/personal-site',
+        },
+        {
+          title: 'Python meme generator 😂',
+          text: `A multimedia command-line and web application to dynamically generate memes, including an image with overlaid text.`,
+          imgSrc: '/images/portfolio/meme-gen2.jpg',
+          imgAlt: 'A screenshot of the tompa.in website',
+          tags: ['Python', 'Flask', 'pandas', 'Pillow'],
+          gitLink: 'https://github.com/TJPain/python-flask-meme-generator/',
+        },
+        {
+          title: 'Command line large dataset query tool',
+          text: `The tool etracts JSON data, loads it into a database and allows users to query and filter NASA/JPL's very large near-Earth objects dataset.`,
+          imgSrc: '/images/portfolio/neo.jpg',
+          imgAlt: 'A screenshot of the tompa.in website',
+          tags: ['Python', 'Various python modules'],
+          gitLink: 'https://github.com/TJPain/python-near-earth-objects',
+        },
+        {
+          title: 'Blog site',
+          text: `I wanted to try building a site with a Django back end and a Vue front end. I used Graphene to create the GraphQL API and Apollo to query the API.`,
+          imgSrc: '/images/portfolio/django-vue-blog.jpg',
+          imgAlt: 'A screenshot of the tompa.in website',
+          tags: ['Django', 'Vue.js', 'Graphene', 'GraphQL', 'Vue Apollo'],
+          gitLink: 'https://github.com/TJPain/django-vue-graphql-blog-site',
+        },
+        {
+          title: 'Location-based web app',
+          text: `A web-based geolocation app showing you shops and nearby places of interest using OpenStreetMap and the Overpass places API. `,
+          imgSrc: '/images/portfolio/geodjango.jpg',
+          imgAlt: 'A screenshot of the tompa.in website',
+          tags: ['Django', 'GeoDjango', 'PostgreSQL'],
+          gitLink: 'https://github.com/TJPain/geodjango-app',
+        },
+        {
+          title: 'Secret Drinks Club Shopify',
+          html: `<p>A quick project for a friend, I built a Vue.js landing page for the <a href="https://www.secretdrinksclub.com/" rel="nofollow" target="_blank" >Secret Drinks Club</a> and added a Shopify shop.</p>`,
+          imgSrc: '/images/portfolio/sdc.jpg',
+          imgAlt: 'A screenshot of the tompa.in website',
+          tags: ['Vue.js', 'Shopify', 'Cloudflare', 'Netlify'],
+          private: true,
         },
       ],
     }
@@ -109,6 +163,14 @@ export default {
   max-width: 1170px;
   height: auto;
   margin: auto;
+}
+.portfolio__title {
+  color: #464860;
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .portfolio__cards-container {
   display: flex;
@@ -153,6 +215,7 @@ export default {
   position: absolute;
   top: 15px;
   left: 15px;
+  padding-right: 15px;
 }
 .portfolio__tag {
   color: #fff;
@@ -174,7 +237,7 @@ export default {
   width: 100%;
   min-height: 80px;
   border-radius: 0 0 7px 7px;
-  padding: 25px;
+  padding: 25px 25px 50px 25px;
   border-top: 1px solid #e4e4e4;
 }
 .portfolio__card-title {
@@ -183,6 +246,11 @@ export default {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
+}
+.portfolio__git {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
 }
 .portfolio__git-container {
   display: block;
@@ -232,6 +300,30 @@ export default {
   height: 16px;
   color: #fff;
   margin-right: 6px;
+}
+/deep/ .portfolio__card-v-html {
+  p {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #464860;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  a {
+    text-decoration: underline;
+    color: #4f2d87;
+  }
+  ul {
+    margin-bottom: 15px;
+  }
+  li {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #464860;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 }
 @media (max-width: 1024px) {
   .portfolio {

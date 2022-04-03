@@ -32,7 +32,7 @@
               <a
                 :href="job.href"
                 class="jobs__accordion-link"
-                rel="“nofollow”"
+                rel="nofollow"
                 target="_blank"
                 >{{ job.href }}</a
               >
