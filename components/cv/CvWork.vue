@@ -265,6 +265,7 @@ export default {
 .jobs__accordion-link {
   margin-left: 3px;
   cursor: pointer;
+  color: #4f2d87;
 }
 /deep/ .text__content {
   p {
