@@ -163,6 +163,19 @@ export default {
       tab5: false,
     }
   },
+  computed: {
+    checkClass() {
+      return (index) => {
+        if (index === 0 && this.tab0 === true) return 'opened'
+        if (index === 1 && this.tab1 === true) return 'opened'
+        if (index === 2 && this.tab2 === true) return 'opened'
+        if (index === 3 && this.tab3 === true) return 'opened'
+        if (index === 4 && this.tab4 === true) return 'opened'
+        if (index === 5 && this.tab5 === true) return 'opened'
+        else return 'closed'
+      }
+    },
+  },
   methods: {
     toggleAccordion(item) {
       const flag = this[item]
@@ -175,19 +188,6 @@ export default {
       this.tab5 = false
       // Toggle selected
       this[item] = !flag
-    },
-  },
-  computed: {
-    checkClass() {
-      return (index) => {
-        if (index === 0 && this.tab0 === true) return 'opened'
-        if (index === 1 && this.tab1 === true) return 'opened'
-        if (index === 2 && this.tab2 === true) return 'opened'
-        if (index === 3 && this.tab3 === true) return 'opened'
-        if (index === 4 && this.tab4 === true) return 'opened'
-        if (index === 5 && this.tab5 === true) return 'opened'
-        else return 'closed'
-      }
     },
   },
 }
