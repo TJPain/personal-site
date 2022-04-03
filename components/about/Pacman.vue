@@ -1,6 +1,6 @@
 <template>
   <div class="pacman">
-    <h3 class="pacman-title">Want something else to do? Here's Pacman...</h3>
+    <h3 class="pacman-title">Here's Pacman in the meantime...</h3>
     <div class="game" style="text-align: center">
       <iframe
         src="https://funhtml5games.com?embed=pacman"
