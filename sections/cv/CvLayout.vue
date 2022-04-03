@@ -11,7 +11,10 @@
         </p>
         <div class="btns__container">
           <a href="mailto:hello@tompa.in" class="cv__cta-btn">Say hello</a>
-          <a href="/images/cv/tom-pain-cv.pdf" target="_blank" class="cv__cta-btn btn-white"
+          <a
+            href="/images/cv/tom-pain-cv.pdf"
+            target="_blank"
+            class="cv__cta-btn btn-white"
             >Download CV</a
           >
         </div>
@@ -100,6 +103,15 @@ export default {
     display: block;
     margin: 85px auto;
     max-width: 95%;
+  }
+}
+@media all and (max-width: 750px) {
+  .btns__container {
+    flex-direction: column;
+  }
+  .cv__cta-btn {
+    width: 100%;
+    margin: 8px 0;
   }
 }
 </style>
