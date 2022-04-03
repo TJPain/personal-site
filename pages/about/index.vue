@@ -1,11 +1,13 @@
 <template>
-  <div class="cv">
-    <p class="some-text" style="margin-top: 200px">About and things</p>
-  </div>
+  <ComingSoon />
 </template>
 
 <script>
+import ComingSoon from '@/components/about/ComingSoon'
 export default {
+  components: {
+    ComingSoon,
+  },
   layout: 'DefaultLayout',
   head() {
     return {
@@ -13,7 +15,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://tompa.in/',
+          href: 'https://tompa.in/about/',
         },
       ],
       meta: [
@@ -21,12 +23,12 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Tom Pain | Full stack developer | MSc Computer Science',
+          content: 'About Tom Pain | Full stack developer | MSc Computer Science',
         },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: 'Tom Pain | Full stack developer | MSc Computer Science',
+          content: 'About Tom Pain | Full stack developer | MSc Computer Science',
         },
         // descriptions
         {
@@ -57,12 +59,12 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'https://tompa.in/',
+          content: 'https://tompa.in/about/',
         },
         {
           hid: 'twitter:url',
           name: 'twitter:url',
-          content: 'https://tompa.in/',
+          content: 'https://tompa.in/about/',
         },
         // don't need to edit
         {

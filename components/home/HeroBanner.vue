@@ -32,6 +32,11 @@
             Python including NumPy, pandas, Matplotlib, SciPy and scikit-learn.
             I also have experience with Django, SQL, GraphQL, Java and Git.
           </p>
+          <div class="hero__dots"></div>
+          <img
+            class="hero__lines"
+            src="@/assets/images/decoration/lines-4.png"
+          />
         </div>
       </div>
     </div>
@@ -64,6 +69,7 @@ export default {
   left: 0;
 }
 .hero__textbox-wrapper {
+  position: relative;
   height: 100%;
   width: 100%;
   max-width: 1170px;
@@ -74,6 +80,7 @@ export default {
   align-items: flex-start;
 }
 .hero__text-container {
+  position: relative;
   height: 400px;
   width: 400px;
   border-radius: 10px;
@@ -116,6 +123,14 @@ export default {
 }
 .hero__title-mobile {
   display: none;
+}
+.hero__lines {
+  position: absolute;
+  bottom: -20px;
+  right: -15px;
+  width: 95px;
+  height: 95px;
+  z-index: 99;
 }
 @media (max-width: 1270px) {
   .hero__textbox-wrapper {

@@ -71,7 +71,7 @@ export default {
 .footer__container {
   position: relative;
   width: 100%;
-  margin-top: 140px;
+  margin-top: 80px;
   padding: 10px 0 0 0;
   background-color: #fff;
 }
