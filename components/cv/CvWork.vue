@@ -6,8 +6,8 @@
         v-for="(job, index) in jobs"
         :key="index"
         class="jobs__accordion-item"
-        :class="{ opened: activeTab === `tab-${index}` }"
-        @click="jumpToTab(`tab-${index}`)"
+        :class="checkClass(index)"
+        @click="toggleAccordion(`tab${index}`)"
       >
         <div class="jobs__accordion-item-header">
           <div class="jobs__accordion-overview-container">
@@ -73,7 +73,6 @@ export default {
   name: 'CvWork',
   data() {
     return {
-      activeTab: 'tab',
       jobs: [
         {
           company: 'Packed',
@@ -156,11 +155,39 @@ export default {
           text: 'An IFA for high-net-worth individuals. I developed a model to track fund-based renewal, researched new investment opportunities and assisted with report writing and due diligence.',
         },
       ],
+      tab0: false,
+      tab1: false,
+      tab2: false,
+      tab3: false,
+      tab4: false,
+      tab5: false,
     }
   },
   methods: {
-    jumpToTab(tab) {
-      this.activeTab = tab
+    toggleAccordion(item) {
+      const flag = this[item]
+      // Close all opened
+      this.tab0 = false
+      this.tab1 = false
+      this.tab2 = false
+      this.tab3 = false
+      this.tab4 = false
+      this.tab5 = false
+      // Toggle selected
+      this[item] = !flag
+    },
+  },
+  computed: {
+    checkClass() {
+      return (index) => {
+        if (index === 0 && this.tab0 === true) return 'opened'
+        if (index === 1 && this.tab1 === true) return 'opened'
+        if (index === 2 && this.tab2 === true) return 'opened'
+        if (index === 3 && this.tab3 === true) return 'opened'
+        if (index === 4 && this.tab4 === true) return 'opened'
+        if (index === 5 && this.tab5 === true) return 'opened'
+        else return 'closed'
+      }
     },
   },
 }
@@ -212,9 +239,10 @@ export default {
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.3s linear;
 }
 .opened .jobs__accordion-item-header::after {
-  content: url(~@/assets/images/icons/accordion-up.svg);
+  transform: translateY(-50%) rotate(180deg);
 }
 .jobs__accordion-overview-container {
   display: flex;
@@ -256,7 +284,7 @@ export default {
 .jobs__accordion-item-body-content {
   padding: 16px 0;
   line-height: 24px;
-  border-top: 1px solid #e4e4e4;
+  // border-top: 1px solid #e4e4e4;
 }
 .jobs__accordion-link-item {
   display: flex;
@@ -303,8 +331,7 @@ export default {
   padding-left: 20px;
 }
 .jobs__others {
-  border-top: 1px solid #e4e4e4;
-  padding-top: 16px;
+  padding-top: 5px;
 }
 .jobs__others-item {
   margin-bottom: 12px;
