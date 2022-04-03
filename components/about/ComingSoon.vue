@@ -4,7 +4,7 @@
       <div class="coming__left-container">
         <h1 class="coming__title">This page is coming soon!</h1>
         <p>
-          I only had a weekend to make this site but I will add some content
+          I only had a weekend to make this site but will add some content
           here soon... on that, if you find any issues please add a pull request
           to
           <a

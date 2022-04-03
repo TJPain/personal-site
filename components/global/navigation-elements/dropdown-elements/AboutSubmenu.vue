@@ -2,54 +2,110 @@
   <div class="n-submenu__container">
     <div class="n-submenu__grid">
       <div class="n-submenu__column">
-        <a href="#"
+        <a href="https://tompa.in/#portfolio"
           ><h3 class="n-submenu__title n-submenu__link__hover">
-            Front end
+            Selected past work
           </h3></a
         >
         <ul class="n-submenu__list">
           <li class="n-submenu__item">
             <a
-              href="#"
+              href="https://tompa.in/#etl"
               class="n-submenu__link n-submenu__link__hover"
-              >How it works</a
-            >
-          </li>
-          <li class="n-submenu__item">
-            <a href="#" class="n-submenu__link n-submenu__link__hover"
-              >Our story</a
+              >ETL and data visualisation application</a
             >
           </li>
           <li class="n-submenu__item">
             <a
-              href="#"
+              href="https://tompa.in/#sdc"
               class="n-submenu__link n-submenu__link__hover"
-              >Our group holidays</a
-            >
-          </li>
-          <li class="n-submenu__item">
-            <a href="#" class="n-submenu__link n-submenu__link__hover"
-              >FAQs</a
+              >The Secret Drinks Club Shopify</a
             >
           </li>
           <li class="n-submenu__item">
             <a
-              href="#"
+              href="https://tompa.in/#personal"
               class="n-submenu__link n-submenu__link__hover"
-              >CALM</a
+              >This site</a
             >
+          </li>
+          <li class="n-submenu__item">
+            <a
+              href="https://tompa.in/#geodjango"
+              class="n-submenu__link n-submenu__link__hover"
+              >Location-based web app
+            </a>
+          </li>
+          <li class="n-submenu__item">
+            <a
+              href="https://tompa.in/#packed"
+              class="n-submenu__link n-submenu__link__hover"
+              >Packed website
+            </a>
+          </li>
+          <li class="n-submenu__item">
+            <a
+              href="https://tompa.in/#packed-app"
+              class="n-submenu__link n-submenu__link__hover"
+              >The Packed iOS and Android app
+            </a>
           </li>
         </ul>
       </div>
       <div class="n-submenu__column">
-        <a href="#"
-          ><h3 class="n-submenu__title n-submenu__link__hover">Back end</h3></a
+        <a href="https://github.com/TJPain" target="_blank"
+          ><h3 class="n-submenu__title n-submenu__link__hover">
+            Selected GitHub Repos
+          </h3></a
         >
-        <p class="n-submenu__apptext">
-          Quickly agree the perfect plan for your trip
-        </p>
-        <a href="#" class="n-submenu__applink">
-          Find out more
+        <ul class="n-submenu__list">
+          <li class="n-submenu__item">
+            <a
+              href="https://github.com/TJPain/python-flask-meme-generator/"
+              target="_blank"
+              class="n-submenu__link n-submenu__link__hover"
+              >Python meme generator</a
+            >
+          </li>
+          <li class="n-submenu__item">
+            <a
+              href="https://github.com/TJPain/geodjango-app"
+              target="_blank"
+              class="n-submenu__link n-submenu__link__hover"
+              >Location-based web app
+            </a>
+          </li>
+          <li class="n-submenu__item">
+            <a
+              href="https://github.com/TJPain/python-near-earth-objects"
+              target="_blank"
+              class="n-submenu__link n-submenu__link__hover"
+              >Command line large dataset query tool</a
+            >
+          </li>
+          <li class="n-submenu__item">
+            <a
+              href="https://github.com/TJPain/django-vue-graphql-blog-site"
+              target="_blank"
+              class="n-submenu__link n-submenu__link__hover"
+              >Django, Vue, GraphQL blog site</a
+            >
+          </li>
+          <li class="n-submenu__item">
+            <a
+              href="https://github.com/TJPain/python-django-diary"
+              target="_blank"
+              class="n-submenu__link n-submenu__link__hover"
+              >Django, Python, SQLite diary app
+            </a>
+          </li>
+        </ul>
+        <a
+          href="https://github.com/TJPain"
+          target="_blank"
+          class="n-submenu__applink"
+        >
+          GitHub profile
           <svg
             class="n-submenu__appicon"
             width="10"
@@ -64,71 +120,45 @@
             />
           </svg>
         </a>
-        <div class="n-submenu__appimages">
-          <div class="n-submenu__imagewrap">
-            <a target="_blank" href="#">
-              <img
-                src="@/assets/images/services-logos/GoogleplayButton.svg"
-                alt="google store"
-              />
-            </a>
-          </div>
-          <div class="n-submenu__imagewrap">
-            <a target="_blank" href="#">
-              <img
-                src="@/assets/images/services-logos/AppStoreButton.svg"
-                alt="app store"
-              />
-            </a>
-          </div>
-        </div>
       </div>
       <div class="n-submenu__column">
-        <a href="#"
-          ><h3 class="n-submenu__title n-submenu__link__hover">Blog</h3></a
-        >
+        <!-- <a href="#"
+          ><h3 class="n-submenu__title n-submenu__link__hover">Case studies</h3></a
+        > -->
+        <h3 class="n-submenu__title">Case studies - coming soon</h3>
         <ul class="n-submenu__bloglist">
           <li class="n-submenu__blogitem">
-            <a
-              href="#"
-              class="n-submenu__bloglink n-submenu__link__hover"
-            >
+            <div class="n-submenu__bloglink">
               <img
-                src="@/assets/images/header/1st-blog-item.jpg"
+                src="@/assets/images/header/packed-site-thumb.jpg"
                 alt="blog image"
                 class="n-submenu__blogimage"
               />
-              How to plan a group holiday
-            </a>
+              The Packed website replatform. From Gulp.js to Vue.js
+            </div>
           </li>
           <li class="n-submenu__blogitem">
-            <a
-              href="#"
-              class="n-submenu__bloglink n-submenu__link__hover"
-            >
+            <div class="n-submenu__bloglink">
               <img
-                src="@/assets/images/header/2nd-blog-item.jpg"
+                src="@/assets/images/header/packed-app.jpg"
                 alt="blog image"
                 class="n-submenu__blogimage"
               />
-              What to pack on a group holiday
-            </a>
+              Cheaply launching an iOS and Android app with React Native
+            </div>
           </li>
           <li class="n-submenu__blogitem">
-            <a
-              href="#"
-              class="n-submenu__bloglink n-submenu__link__hover"
-            >
+            <div class="n-submenu__bloglink">
               <img
-                src="@/assets/images/header/3rd-blog-item.jpg"
+                src="@/assets/images/header/sdc-thumb.jpg"
                 alt="blog image"
                 class="n-submenu__blogimage"
               />
-              10 people in every WhatsApp group (and how to avoid them)
-            </a>
+              Launching a Shopify store in a weekend
+            </div>
           </li>
         </ul>
-        <a href="#" class="n-submenu__applink">
+        <!-- <a href="#" class="n-submenu__applink">
           See all blogs
           <svg
             class="n-submenu__appicon"
@@ -143,7 +173,7 @@
               fill="#4F2D87"
             />
           </svg>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>

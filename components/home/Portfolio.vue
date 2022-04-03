@@ -1,15 +1,14 @@
 <template>
   <div class="portfolio">
+    <a name="portfolio"></a>
     <h2 class="portfolio__title">Selected past work</h2>
     <div class="portfolio__cards-container">
       <div
         v-for="(item, index) in portfolio"
         :key="index"
         class="portfolio__card"
-        data-aos="fade-up"
-        :data-aos-delay="200 + index * 100"
-        data-aos-once="true"
       >
+        <a :name="item.anchor"></a>
         <img
           :src="item.imgSrc"
           :alt="item.imgAlt"
@@ -27,11 +26,7 @@
           </h3>
           <p v-if="item.text" class="portfolio__card-text">{{ item.text }}</p>
           <!-- eslint-disable-next-line vue/no-v-html -->
-          <div
-            v-if="item.html"
-            class="portfolio__card-v-html"
-            v-html="item.html"
-          ></div>
+          <div v-if="item.html" class="card-v-html" v-html="item.html"></div>
         </div>
         <div class="portfolio__git">
           <a
@@ -68,7 +63,7 @@
 
 <script>
 export default {
-  name: 'portfolio',
+  name: 'Portfolio',
   data() {
     return {
       portfolio: [
@@ -79,6 +74,7 @@ export default {
           imgAlt: 'A Python and MySQL code snippet',
           tags: ['Python', 'MySQL', 'pandas', 'NumPy', 'Matplotlib'],
           comingSoon: true,
+          anchor: 'etl',
         },
         {
           title: 'Packed website',
@@ -94,6 +90,7 @@ export default {
             'Cloudflare',
           ],
           private: true,
+          anchor: 'packed',
         },
         {
           title: 'Packed app',
@@ -102,6 +99,7 @@ export default {
           imgAlt: 'A timeline of the Packed app',
           tags: ['React Native', 'AWS'],
           private: true,
+          anchor: 'packed-app',
         },
         {
           title: 'This site',
@@ -110,6 +108,7 @@ export default {
           imgAlt: 'A screenshot of the tompa.in website',
           tags: ['Nuxt.js', 'Cloudflare', 'Netlify'],
           gitLink: 'https://github.com/TJPain/personal-site',
+          anchor: 'personal',
         },
         {
           title: 'Python meme generator 😂',
@@ -118,6 +117,7 @@ export default {
           imgAlt: 'A screenshot of the tompa.in website',
           tags: ['Python', 'Flask', 'pandas', 'Pillow'],
           gitLink: 'https://github.com/TJPain/python-flask-meme-generator/',
+          anchor: 'meme',
         },
         {
           title: 'Command line large dataset query tool',
@@ -126,6 +126,7 @@ export default {
           imgAlt: 'A screenshot of the tompa.in website',
           tags: ['Python', 'Various python modules'],
           gitLink: 'https://github.com/TJPain/python-near-earth-objects',
+          anchor: 'neo',
         },
         {
           title: 'Blog site',
@@ -134,6 +135,7 @@ export default {
           imgAlt: 'A screenshot of the tompa.in website',
           tags: ['Django', 'Vue.js', 'Graphene', 'GraphQL', 'Vue Apollo'],
           gitLink: 'https://github.com/TJPain/django-vue-graphql-blog-site',
+          anchor: 'djano-blog',
         },
         {
           title: 'Location-based web app',
@@ -142,6 +144,7 @@ export default {
           imgAlt: 'A screenshot of the tompa.in website',
           tags: ['Django', 'GeoDjango', 'PostgreSQL'],
           gitLink: 'https://github.com/TJPain/geodjango-app',
+          anchor: 'geodjango',
         },
         {
           title: 'Secret Drinks Club Shopify',
@@ -150,6 +153,7 @@ export default {
           imgAlt: 'A screenshot of the tompa.in website',
           tags: ['Vue.js', 'Shopify', 'Cloudflare', 'Netlify'],
           private: true,
+          anchor: 'sdc',
         },
       ],
     }
@@ -301,7 +305,7 @@ export default {
   color: #fff;
   margin-right: 6px;
 }
-/deep/ .portfolio__card-v-html {
+/deep/ .card-v-html {
   p {
     font-family: Montserrat, sans-serif;
     font-size: 16px;

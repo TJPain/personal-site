@@ -8,6 +8,11 @@
         />
       </parallax>
     </client-only>
+    <img
+      src="@/assets/images/home/hero-banner-image.jpg"
+      alt="mountains in the sun"
+      class="hero_img-mobile"
+    />
     <div class="hero__contents-wrapper">
       <div class="hero__textbox-wrapper">
         <div class="hero__text-container">
@@ -52,10 +57,9 @@ export default {
 <style lang="scss" scoped>
 .hero-banner {
   min-height: calc(1vh - 83px);
-  margin-bottom: 50px;
+  margin: 83px 0 50px 0;
   overflow: hidden;
   position: relative;
-  padding-top: 83px;
 }
 .hero__contents-wrapper {
   height: 100%;
@@ -128,6 +132,9 @@ export default {
   height: 95px;
   z-index: 99;
 }
+.hero_img-mobile {
+  display: none;
+}
 @media (max-width: 1270px) {
   .hero__textbox-wrapper {
     max-width: unset;
@@ -141,7 +148,19 @@ export default {
   }
   .hero-banner {
     min-height: calc(1vh - 66px);
-    padding-top: 66px;
+    margin-top: 66px;
+  }
+}
+@media (max-width: 650px) {
+  .hero-banner {
+    width: auto;
+    max-height: 700px;
+  }
+  .hero__image {
+    display: none;
+  }
+  .hero_img-mobile {
+    display: block;
   }
 }
 @media (max-width: 450px) {
@@ -151,7 +170,6 @@ export default {
 }
 @media (max-width: 370px) {
   .hero-banner {
-    height: 600px;
     min-height: unset;
   }
   .hero__container-top {
