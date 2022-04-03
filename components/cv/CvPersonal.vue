@@ -174,6 +174,16 @@ export default {
   }
   .cv__bio {
     width: 60%;
+    padding-right: 30px;
+  }
+  .cv__contact-container {
+    padding-left: 30px;
+  }
+}
+@media all and (max-width: 600px) {
+  .cv__bio,
+  .cv__contact-container {
+    padding: 20px;
   }
 }
 @media all and (max-width: 500px) {

@@ -5,9 +5,15 @@
       <div class="cv__experience-container"><CvWork /></div>
       <div class="cv__experience-container"><CvEducation /></div>
       <div class="cv__experience-container cv__cta-container">
-        <p>Want to know more? Drop me an email</p>
-        <div class="">
+        <p>
+          Want to know more? Drop me an email. You can also download my CV below
+          👇
+        </p>
+        <div class="btns__container">
           <a href="mailto:hello@tompa.in" class="cv__cta-btn">Say hello</a>
+          <a href="/images/cv/tom-pain-cv.pdf" target="_blank" class="cv__cta-btn btn-white"
+            >Download CV</a
+          >
         </div>
       </div>
     </div>
@@ -53,20 +59,35 @@ export default {
 .cv__cta-container {
   padding: 30px;
 }
+.btns__container {
+  display: flex;
+  flex-direction: row;
+}
 .cv__cta-btn {
   display: inline-block;
   background: #4f2d87;
+  border: 2px solid #4f2d87;
   border-radius: 10px;
   text-align: center;
   color: #fff;
-  padding: 13px 30px;
+  padding: 10px 30px 14px 30px;
   transition: all 0.4s ease;
   height: 45px;
+  min-width: 160px;
+  width: auto;
   box-sizing: border-box;
   line-height: 1.3;
-  margin-top: 8px;
+  margin: 8px 15px 0 0;
   &:hover {
     opacity: 0.8;
+  }
+}
+.cv__cta-btn.btn-white {
+  color: #4f2d87;
+  background: #fff;
+  &:hover {
+    opacity: 0.9;
+    background: #e2d9f2;
   }
 }
 @media all and (max-width: 1024px) {

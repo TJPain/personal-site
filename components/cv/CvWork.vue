@@ -322,6 +322,11 @@ export default {
     min-height: 50px;
   }
 }
+@media all and (max-width: 600px) {
+  .cv__work-container {
+    padding: 30px 20px;
+  }
+}
 @media all and (max-width: 450px) {
   .job__logo-container {
     display: none;
