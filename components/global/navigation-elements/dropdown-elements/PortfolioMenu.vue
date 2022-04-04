@@ -2,7 +2,7 @@
   <div class="n-submenu__container">
     <div class="n-submenu__grid">
       <div class="n-submenu__column">
-        <a href="https://tompa.in/#portfolio"
+        <a href="/" v-scroll-to="'#portfolio'"
           ><h3 class="n-submenu__title n-submenu__link__hover">
             Selected past work
           </h3></a
@@ -10,42 +10,48 @@
         <ul class="n-submenu__list">
           <li class="n-submenu__item">
             <a
-              href="https://tompa.in/#etl"
+              href="/"
+              v-scroll-to="'#etl'"
               class="n-submenu__link n-submenu__link__hover"
               >ETL and data visualisation application</a
             >
           </li>
           <li class="n-submenu__item">
             <a
-              href="https://tompa.in/#sdc"
+              href="/"
+              v-scroll-to="'#sdc'"
               class="n-submenu__link n-submenu__link__hover"
               >The Secret Drinks Club Shopify</a
             >
           </li>
           <li class="n-submenu__item">
             <a
-              href="https://tompa.in/#personal"
+              href="/"
+              v-scroll-to="'#personal'"
               class="n-submenu__link n-submenu__link__hover"
               >This site</a
             >
           </li>
           <li class="n-submenu__item">
             <a
-              href="https://tompa.in/#geodjango"
+              href="/"
+              v-scroll-to="'#geodjango'"
               class="n-submenu__link n-submenu__link__hover"
               >Location-based web app
             </a>
           </li>
           <li class="n-submenu__item">
             <a
-              href="https://tompa.in/#packed"
+              href="/"
+              v-scroll-to="'#packed'"
               class="n-submenu__link n-submenu__link__hover"
               >Packed website
             </a>
           </li>
           <li class="n-submenu__item">
             <a
-              href="https://tompa.in/#packed-app"
+              href="/"
+              v-scroll-to="'#packed-app'"
               class="n-submenu__link n-submenu__link__hover"
               >The Packed iOS and Android app
             </a>
@@ -181,7 +187,7 @@
 
 <script>
 export default {
-  name: 'AboutSubmenu',
+  name: 'PortfolioMenu',
 }
 </script>
 

@@ -73,9 +73,9 @@
           was responsible for technology and product. When the pandemic started,
           I decided to build upon this hands-on development experience with a
           part-time MSc in Computer Science with Artificial Intelligence, which
-          I have almost finished. I am now looking for a full- time engineering
-          role where I can continue to learn and gain experience working
-          throughout the stack, ideally for a web-based, consumer business.
+          is almost complete. I am now looking for a full-time engineering role
+          where I can continue to learn and gain experience working throughout
+          the stack, ideally for a web-based, consumer business.
         </p>
         <p class="bio__text">
           Most of my experience is with Vue.js / Nuxt.js and Python including

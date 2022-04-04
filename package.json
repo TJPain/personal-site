@@ -17,6 +17,7 @@
     "nuxt": "^2.15.7",
     "vue-fixed-header": "^3.2.15",
     "vue-parallaxy": "^1.1.1",
+    "vue-scrollto": "^2.20.0",
     "webpack": "^4.46.0"
   },
   "devDependencies": {

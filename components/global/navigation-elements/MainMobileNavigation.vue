@@ -45,7 +45,7 @@
             </span>
             <span class="n-selected__title">Portfolio</span>
             <div v-show="aboutSelected" class="n-about__selected">
-              <AboutSubmenu />
+              <PortfolioMenu />
             </div>
           </div>
         </div>
@@ -55,11 +55,11 @@
 </template>
 
 <script>
-import AboutSubmenu from '@/components/global/navigation-elements/dropdown-elements/AboutSubmenu'
+import PortfolioMenu from '@/components/global/navigation-elements/dropdown-elements/PortfolioMenu'
 export default {
   name: 'MainMobileNavigation',
   components: {
-    AboutSubmenu,
+    PortfolioMenu,
   },
   data() {
     return {

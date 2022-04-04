@@ -9,7 +9,7 @@
       </li>
       <li class="n-navigation__item">
         <span>Portfolio</span>
-        <AboutSubmenu />
+        <PortfolioMenu />
       </li>
       <li v-if="!whiteCta" class="">
         <a href="mailto:hello@tompa.in" class="n-navigation__cta">Say hello</a>
@@ -24,11 +24,11 @@
 </template>
 
 <script>
-import AboutSubmenu from '@/components/global/navigation-elements/dropdown-elements/AboutSubmenu'
+import PortfolioMenu from '@/components/global/navigation-elements/dropdown-elements/PortfolioMenu'
 export default {
   name: 'MainNavigation',
   components: {
-    AboutSubmenu,
+    PortfolioMenu,
   },
   props: {
     whiteCta: {
