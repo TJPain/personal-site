@@ -60,6 +60,7 @@ export default {
 
 a .footer__bottom--img {
   transition: all 0.4s ease;
+
   &:hover {
     opacity: 0.9;
     background: rgba(255, 255, 255, 0.2);

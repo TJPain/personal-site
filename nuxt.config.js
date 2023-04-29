@@ -24,7 +24,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~assets/scss/global.scss'],
+  css: ['@/assets/scss/global.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '~/plugins/aos.js', mode: 'client' }],
@@ -42,7 +42,14 @@ export default {
   modules: ['@nuxtjs/style-resources', 'vue-scrollto/nuxt'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    // ...
+    loaders: {
+      scss: {
+        implementation: require('sass'),
+      },
+    },
+  },
 
   styleResources: {
     scss: ['./assets/scss/*.scss'],

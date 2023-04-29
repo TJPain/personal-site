@@ -75,23 +75,42 @@ export default {
     return {
       jobs: [
         {
-          company: 'Packed',
-          href: 'https://packed.co/',
+          company: 'Midnite',
           imgSrc: '/images/cv/logos/packed-icon.jpg',
           imgAlt: 'The Packed logo',
-          title: 'Co-Founder, responsible for technology and product',
+          title: 'Co-Founder and software engineer',
           dates: 'March 2017 - March 2022',
           text: `<p style="margin-bottom: unset">Packed provided a marketplace of trusted and reliable holidays for groups, and the tools they needed to effortlessly plan and book their trips. Pre-covid, we were in a very strong position with sales of up to £230k per month, however, after refunding significant client funds for cancelled trips and two years with very little revenue, the company was in a financially difficult position, and we took the decision to close.</p>`,
           achievements: [
             'Over 2,600 customers and £2.3m in sales',
             'Average review score of 4.98 / 5 from 250+ reviews',
             'Featured in The Times, the Evening Standard, the Metro and Condé Nast',
-            'I built the original website using gulp.js and then the latest website with Vue.js, Strapi as a headless CMS and Vue Apollo to integrate GraphQL',
-            'Managed three overseas contract developers who predominantly built our booking system on Salesforce along with a contract designer and a mobile app development agency in Serbia',
+            'I built the entire MVP and then worked in a full stack role along with managing the engineering team as we built the next iteration',
+            'Managed three overseas contract developers along with a contract designer and a mobile app development agency in Serbia',
             'Designed and launched a React Native mobile app on the App Store and Play Store, which had almost 10,000 users',
             'Responsible for all technical SEO, growing organic traffic to >10k users per month',
-            'Responsible for our on-site and in-app analytics stack including Google Tag Manager, Google Analytics, Mixpanel, Branch, and Segment. Improved on-site conversion resulting in a projected LTV-CAC of 9.6x',
+            'Responsible for our on-site and in-app analytics stack',
           ],
+          tags: ['Python', 'Flask', 'TypeScript', 'Vue.js'],
+        },
+        {
+          company: 'Packed',
+          imgSrc: '/images/cv/logos/packed-icon.jpg',
+          imgAlt: 'The Packed logo',
+          title: 'Co-Founder and software engineer',
+          dates: 'March 2017 - March 2022',
+          text: `<p style="margin-bottom: unset">Packed provided a marketplace of trusted and reliable holidays for groups, and the tools they needed to effortlessly plan and book their trips. Pre-covid, we were in a very strong position with sales of up to £230k per month, however, after refunding significant client funds for cancelled trips and two years with very little revenue, the company was in a financially difficult position, and we took the decision to close.</p>`,
+          achievements: [
+            'Over 2,600 customers and £2.3m in sales',
+            'Average review score of 4.98 / 5 from 250+ reviews',
+            'Featured in The Times, the Evening Standard, the Metro and Condé Nast',
+            'I built the entire MVP and then worked in a full stack role along with managing the engineering team as we built the next iteration',
+            'Managed three overseas contract developers along with a contract designer and a mobile app development agency in Serbia',
+            'Designed and launched a React Native mobile app on the App Store and Play Store, which had almost 10,000 users',
+            'Responsible for all technical SEO, growing organic traffic to >10k users per month',
+            'Responsible for our on-site and in-app analytics stack',
+          ],
+          tags: ['Python', 'Django', 'Nuxt.js', 'Cloudflare', 'AWS'],
         },
         {
           company: 'True',
@@ -111,16 +130,6 @@ export default {
           dates: 'January 2015 - December 2016',
           text: `<p style="margin-bottom: unset">Following success in Actuarial, Risk & Compliance, Finance, and Change Management, I was approached by OJA to establish a new Digital desk. On the back of strong sales and bottom-line performance for the Digital team, I started Design & Engineering and Marketing recruitment teams which I managed concurrently. I was promoted three times in two years and managed a team of 14 people. I also led the UK-wide diversification into non-Financial Services sectors.</p>`,
         },
-        {
-          company: 'Page Group',
-          title: 'Senior Consultant, Digital',
-          imgSrc: '/images/cv/logos/page.png',
-          imgAlt: 'The Page Group logo',
-          href: 'https://www.page.com/',
-          dates: 'October 2013 - January 2015',
-          text: `<p style="margin-bottom: unset">Responsible for forming and growing the Digital recruitment team in the North West.</p>`,
-        },
-
         {
           company: 'Outgoing',
           title: 'Product Manager',
@@ -193,7 +202,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .cv__work-container {
   width: 100%;
   height: auto;
@@ -284,7 +293,6 @@ export default {
 .jobs__accordion-item-body-content {
   padding: 16px 0;
   line-height: 24px;
-  // border-top: 1px solid #e4e4e4;
 }
 .jobs__accordion-link-item {
   display: flex;
