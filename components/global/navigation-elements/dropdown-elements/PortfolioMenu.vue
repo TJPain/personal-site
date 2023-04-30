@@ -2,7 +2,7 @@
   <div class="n-submenu__container">
     <div class="n-submenu__grid">
       <div class="n-submenu__column">
-        <nuxt-link to="/#portfolio">
+        <nuxt-link to="/#portfolio" @click.native="$emit('close-menu')">
           <h3 class="n-submenu__title n-submenu__link__hover">
             Selected past work
           </h3>
@@ -12,6 +12,7 @@
             <nuxt-link
               to="/#trading"
               class="n-submenu__link n-submenu__link__hover"
+              @click.native="$emit('close-menu')"
             >
               High-frequency trading algorithm 
             </nuxt-link>
@@ -20,6 +21,7 @@
             <nuxt-link
               to="/#etl"
               class="n-submenu__link n-submenu__link__hover"
+              @click.native="$emit('close-menu')"
             >
               ETL and data visualisation application
             </nuxt-link>
@@ -28,6 +30,7 @@
             <nuxt-link
               to="/#sdc"
               class="n-submenu__link n-submenu__link__hover"
+              @click.native="$emit('close-menu')"
             >
               The Secret Drinks Club Shopify
             </nuxt-link>
@@ -36,6 +39,7 @@
             <nuxt-link
               to="/#personal"
               class="n-submenu__link n-submenu__link__hover"
+              @click.native="$emit('close-menu')"
             >
               This site
             </nuxt-link>
@@ -44,6 +48,7 @@
             <nuxt-link
               to="/#geodjango"
               class="n-submenu__link n-submenu__link__hover"
+              @click.native="$emit('close-menu')"
             >
               Location-based web app
             </nuxt-link>
@@ -52,6 +57,7 @@
             <nuxt-link
               to="/#packed"
               class="n-submenu__link n-submenu__link__hover"
+              @click.native="$emit('close-menu')"
             >
               Packed website
             </nuxt-link>
@@ -60,6 +66,7 @@
             <nuxt-link
               to="/#packed-app"
               class="n-submenu__link n-submenu__link__hover"
+              @click.native="$emit('close-menu')"
             >
               The Packed iOS and Android app
             </nuxt-link>

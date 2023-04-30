@@ -45,7 +45,7 @@
             </span>
             <span class="n-selected__title">Portfolio</span>
             <div v-show="aboutSelected" class="n-about__selected">
-              <PortfolioMenu />
+              <PortfolioMenu @close-menu="handleCloseMenu" />
             </div>
           </div>
         </div>
@@ -78,6 +78,9 @@ export default {
     },
     backMobileMenu() {
       this.aboutSelected = false
+    },
+    handleCloseMenu() {
+      this.openMobileMenu();
     },
   },
 }
