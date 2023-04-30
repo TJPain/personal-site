@@ -29,7 +29,7 @@
           </div>
           <p class="hero__title hero__title-mobile">Hi! I'm Tom Pain</p>
           <p class="hero__text">
-            A full-stack engineer, most experienced with Python, including Flask and Django, on the backend
+            A full-stack engineer, mainly using Python, including Flask and Django, on the backend
             and Vue.js along with vanilla JavaScript and TypeScript on the frontend. 
           </p>
           <div class="hero__dots"></div>

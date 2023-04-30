@@ -65,9 +65,10 @@ export default {
           imgSrc: '/images/cv/logos/york.png',
           imgAlt: 'The University of York logo',
           bullets: [
-            'Current grade average: 77.3% (distinction) with just the dissertation / research project remaining',
+            'Current grade average: 78% (distinction) with just the dissertation / research project remaining',
             'Modules: AI and Machine Learning, Applied AI, Algorithms and Data Structures, Advanced Programming, Big Data Analytics, Computer Architecture and Operating Systems, Computer and Mobile Networks, Software Engineering, and an AI-based research project',
             'Built a Python and MySQL ETL and data visualisation application for Advanced Programming',
+            'For my research project I am building an AI for creating high-frequency trading strategies for the EUR/USD currency pair. This deep learning algorithm is built with Python and Tensorflow and runs on AWS with real time data to fully automate trades on Oanda.'
           ],
         },
         {

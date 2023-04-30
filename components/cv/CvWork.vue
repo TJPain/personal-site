@@ -76,21 +76,12 @@ export default {
       jobs: [
         {
           company: 'Midnite',
-          imgSrc: '/images/cv/logos/packed-icon.jpg',
-          imgAlt: 'The Packed logo',
-          title: 'Co-Founder and software engineer',
-          dates: 'March 2017 - March 2022',
-          text: `<p style="margin-bottom: unset">Packed provided a marketplace of trusted and reliable holidays for groups, and the tools they needed to effortlessly plan and book their trips. Pre-covid, we were in a very strong position with sales of up to £230k per month, however, after refunding significant client funds for cancelled trips and two years with very little revenue, the company was in a financially difficult position, and we took the decision to close.</p>`,
-          achievements: [
-            'Over 2,600 customers and £2.3m in sales',
-            'Average review score of 4.98 / 5 from 250+ reviews',
-            'Featured in The Times, the Evening Standard, the Metro and Condé Nast',
-            'I built the entire MVP and then worked in a full stack role along with managing the engineering team as we built the next iteration',
-            'Managed three overseas contract developers along with a contract designer and a mobile app development agency in Serbia',
-            'Designed and launched a React Native mobile app on the App Store and Play Store, which had almost 10,000 users',
-            'Responsible for all technical SEO, growing organic traffic to >10k users per month',
-            'Responsible for our on-site and in-app analytics stack',
-          ],
+          imgSrc: '/images/cv/logos/midnite-icon.png',
+          imgAlt: 'The Midnite logo',
+          title: 'Software engineer',
+          href: 'https://www.midnite.com/',
+          dates: 'May 2022 - to date',
+          text: `<p style="margin-bottom: unset">I work in a full stack role in our Growth Engineering Team. We build products for user acquisition and retention with Vue.js & TypeScript on the front end and Python and Flask on the back end. I am also heavily involved in building internal tools for our Trading Team.</p>`,
           tags: ['Python', 'Flask', 'TypeScript', 'Vue.js'],
         },
         {

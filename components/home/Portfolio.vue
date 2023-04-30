@@ -68,8 +68,17 @@ export default {
     return {
       portfolio: [
         {
+          title: 'High-frequency trading algorithm',
+          text: 'I am currently building a deep learning algorithm for high-frequency trading of the EUR/USD currency pair',
+          imgSrc: '/images/portfolio/meme-gen.jpg',
+          imgAlt: 'A Python and MySQL code snippet',
+          tags: ['Python', 'AWS', 'pandas', 'NumPy', 'scikit-learn', 'Tensorflow'],
+          comingSoon: true,
+          anchor: 'etl',
+        },
+        {
           title: 'ETL and data visualisation application',
-          text: 'I am currently building an ETL application which extracts and cleans CSV data, adds it to a MySQL database, and provides data visulisations to a custom GUI.',
+          text: 'An ETL application which extracts and cleans CSV data, adds it to a MySQL database, and provides data visulisations to a custom GUI.',
           imgSrc: '/images/portfolio/meme-gen.jpg',
           imgAlt: 'A Python and MySQL code snippet',
           tags: ['Python', 'MySQL', 'pandas', 'NumPy', 'Matplotlib'],
@@ -78,7 +87,7 @@ export default {
         },
         {
           title: 'Packed website',
-          html: `<p>Packed is my old company (see my <a href="/cv">CV</a>), I built the <a href="https://packed.co/" rel="nofollow" target="_blank" >website</a> with Nuxt.js using Strapi as a headless CMS. It also used Ghost for the blog.</p>`,
+          html: `<p>I built the Packed website with Nuxt.js using Strapi as a headless CMS. It also used Ghost for the blog.</p>`,
           imgSrc: '/images/portfolio/packed-site.jpg',
           imgAlt: 'A screenshot of the Packed website',
           tags: [

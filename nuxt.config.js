@@ -46,7 +46,7 @@ export default {
     // ...
     loaders: {
       scss: {
-        implementation: require('sass'),
+        implementation: require('node-sass'),
       },
     },
   },
