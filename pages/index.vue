@@ -16,7 +16,7 @@ export default {
   layout: 'DefaultLayout',
   head() {
     return {
-      title: 'Tom Pain | Full stack developer | MSc Computer Science',
+      title: 'Tom Pain | Full stack engineer | MSc Computer Science',
       link: [
         {
           rel: 'canonical',
@@ -28,37 +28,37 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Tom Pain | Full stack developer | MSc Computer Science',
+          content: 'Tom Pain | Full stack engineer | MSc Computer Science',
         },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: 'Tom Pain | Full stack developer | MSc Computer Science',
+          content: 'Tom Pain | Full stack engineer | MSc Computer Science',
         },
         // descriptions
         {
           hid: 'description',
           name: 'description',
           content:
-            'Full stack developer. Experience with Vue.js / Nuxt.js, Python, Django, SQL, GraphQL, and Java',
+            'Full stack engineer. Experience with Vue.js / Nuxt.js, Python, Django, SQL, GraphQL, and Java',
         },
         {
           hid: 'og:description',
           name: 'og:description',
           content:
-            'Full stack developer. Experience with Vue.js / Nuxt.js, Python, Django, SQL, GraphQL, and Java',
+            'Full stack engineer. Experience with Vue.js / Nuxt.js, Python, Django, SQL, GraphQL, and Java',
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
           content:
-            'Full stack developer. Experience with Vue.js / Nuxt.js, Python, Django, SQL, GraphQL, and Java',
+            'Full stack engineer. Experience with Vue.js / Nuxt.js, Python, Django, SQL, GraphQL, and Java',
         },
         // keywords
         {
           hid: 'keywords',
           name: 'keywords',
-          content: 'full stack developer, python, front end, vue',
+          content: 'full stack engineer, python, front end, vue',
         },
         // links
         {
