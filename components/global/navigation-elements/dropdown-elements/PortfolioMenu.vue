@@ -2,59 +2,67 @@
   <div class="n-submenu__container">
     <div class="n-submenu__grid">
       <div class="n-submenu__column">
-        <a href="/" v-scroll-to="'#portfolio'"
-          ><h3 class="n-submenu__title n-submenu__link__hover">
+        <nuxt-link to="/#portfolio">
+          <h3 class="n-submenu__title n-submenu__link__hover">
             Selected past work
-          </h3></a
-        >
+          </h3>
+        </nuxt-link>
         <ul class="n-submenu__list">
           <li class="n-submenu__item">
-            <a
-              href="/"
-              v-scroll-to="'#etl'"
+            <nuxt-link
+              to="/#trading"
               class="n-submenu__link n-submenu__link__hover"
-              >ETL and data visualisation application</a
             >
+              High-frequency trading algorithm 
+            </nuxt-link>
           </li>
           <li class="n-submenu__item">
-            <a
-              href="/"
-              v-scroll-to="'#sdc'"
+            <nuxt-link
+              to="/#etl"
               class="n-submenu__link n-submenu__link__hover"
-              >The Secret Drinks Club Shopify</a
             >
+              ETL and data visualisation application
+            </nuxt-link>
           </li>
           <li class="n-submenu__item">
-            <a
-              href="/"
-              v-scroll-to="'#personal'"
+            <nuxt-link
+              to="/#sdc"
               class="n-submenu__link n-submenu__link__hover"
-              >This site</a
             >
+              The Secret Drinks Club Shopify
+            </nuxt-link>
           </li>
           <li class="n-submenu__item">
-            <a
-              href="/"
-              v-scroll-to="'#geodjango'"
+            <nuxt-link
+              to="/#personal"
               class="n-submenu__link n-submenu__link__hover"
-              >Location-based web app
-            </a>
+            >
+              This site
+            </nuxt-link>
           </li>
           <li class="n-submenu__item">
-            <a
-              href="/"
-              v-scroll-to="'#packed'"
+            <nuxt-link
+              to="/#geodjango"
               class="n-submenu__link n-submenu__link__hover"
-              >Packed website
-            </a>
+            >
+              Location-based web app
+            </nuxt-link>
           </li>
           <li class="n-submenu__item">
-            <a
-              href="/"
-              v-scroll-to="'#packed-app'"
+            <nuxt-link
+              to="/#packed"
               class="n-submenu__link n-submenu__link__hover"
-              >The Packed iOS and Android app
-            </a>
+            >
+              Packed website
+            </nuxt-link>
+          </li>
+          <li class="n-submenu__item">
+            <nuxt-link
+              to="/#packed-app"
+              class="n-submenu__link n-submenu__link__hover"
+            >
+              The Packed iOS and Android app
+            </nuxt-link>
           </li>
         </ul>
       </div>

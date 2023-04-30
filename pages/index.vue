@@ -117,5 +117,25 @@ export default {
       ],
     }
   },
+  watch: {
+    $route(to, from) {
+      if (to.hash) {
+        this.scrollToHash()
+      }
+    },
+  },
+  mounted() {
+    if (this.$route.hash) {
+      this.scrollToHash()
+    }
+  },
+  methods: {
+    scrollToHash() {
+      const hash = this.$route.hash
+      this.$nextTick(() => {
+        this.$scrollTo(hash, 0, { offset: -120 })
+      })
+    },
+  },
 }
 </script>

@@ -1,14 +1,13 @@
 <template>
   <div class="portfolio">
-    <a name="portfolio"></a>
-    <h2 class="portfolio__title">Selected past work</h2>
+    <h2 id="portfolio" class="portfolio__title">Selected past work</h2>
     <div class="portfolio__cards-container">
       <div
         v-for="(item, index) in portfolio"
+        :id="item.anchor"
         :key="index"
         class="portfolio__card"
       >
-        <a :name="item.anchor"></a>
         <img
           :src="item.imgSrc"
           :alt="item.imgAlt"
@@ -74,7 +73,7 @@ export default {
           imgAlt: 'A Python and MySQL code snippet',
           tags: ['Python', 'AWS', 'pandas', 'NumPy', 'scikit-learn', 'Tensorflow'],
           private: true,
-          anchor: 'etl',
+          anchor: 'trading',
         },
         {
           title: 'ETL and data visualisation application',
