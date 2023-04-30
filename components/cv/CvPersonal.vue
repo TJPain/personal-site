@@ -83,8 +83,8 @@
           I have almost completed - my current grade average is 78% (distinction).
           For the research project I am building an AI for creating high-frequency
           trading strategies for the EUR/USD currency pair. This deep learning algorithm
-          is built with Python and runs on AWS with real time data to fully automate
-          trades on Oanda. 
+          is built with Python and Tensorflow and runs on AWS with real time data to
+          fully automate trades on Oanda.
         </p>
         <p class="bio__text">
           Most of my experience is with Vue.js and Python including Flask, Django,
@@ -158,9 +158,9 @@ export default {
 .contact-link {
   cursor: pointer;
   transition: all ease 0.5;
-  &:hover {
+}
+.contact-link:hover {
     color: #4f2d87;
-  }
 }
 .cv__bio {
   padding: 20px;

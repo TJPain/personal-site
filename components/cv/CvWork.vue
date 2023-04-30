@@ -48,6 +48,11 @@
               </li>
             </ul>
           </div>
+          <div class="jobs__tag-container">
+            <div v-for="(tag, i) in job.tags" :key="i" class="jobs__tag">
+              {{ tag }}
+            </div>
+        </div>
         </div>
         <div v-else class="jobs__accordion-item-body">
           <div class="jobs__others">
@@ -82,7 +87,7 @@ export default {
           href: 'https://www.midnite.com/',
           dates: 'May 2022 - to date',
           text: `<p style="margin-bottom: unset">I work in a full stack role in our Growth Engineering Team. We build products for user acquisition and retention with Vue.js & TypeScript on the front end and Python and Flask on the back end. I am also heavily involved in building internal tools for our Trading Team.</p>`,
-          tags: ['Python', 'Flask', 'TypeScript', 'Vue.js'],
+          tags: ['Python', 'Flask', 'Vue.js', 'TypeScript'],
         },
         {
           company: 'Packed',
@@ -98,8 +103,6 @@ export default {
             'I built the entire MVP and then worked in a full stack role along with managing the engineering team as we built the next iteration',
             'Managed three overseas contract developers along with a contract designer and a mobile app development agency in Serbia',
             'Designed and launched a React Native mobile app on the App Store and Play Store, which had almost 10,000 users',
-            'Responsible for all technical SEO, growing organic traffic to >10k users per month',
-            'Responsible for our on-site and in-app analytics stack',
           ],
           tags: ['Python', 'Django', 'Nuxt.js', 'Cloudflare', 'AWS'],
         },
@@ -340,6 +343,26 @@ export default {
 }
 .jobs__others-title-bold {
   font-weight: 600;
+}
+.jobs__tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+}
+.jobs__tag {
+  color: #fff;
+  background: #4f2d87;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: inline-block;
 }
 @media all and (max-width: 750px) {
   .job__logo-container {

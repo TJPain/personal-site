@@ -73,7 +73,7 @@ export default {
           imgSrc: '/images/portfolio/meme-gen.jpg',
           imgAlt: 'A Python and MySQL code snippet',
           tags: ['Python', 'AWS', 'pandas', 'NumPy', 'scikit-learn', 'Tensorflow'],
-          comingSoon: true,
+          private: true,
           anchor: 'etl',
         },
         {
@@ -241,7 +241,6 @@ export default {
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
-  color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   display: inline-block;
