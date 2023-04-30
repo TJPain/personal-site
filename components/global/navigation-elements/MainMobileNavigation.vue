@@ -43,7 +43,6 @@
               />
               Back
             </span>
-            <span class="n-selected__title">Portfolio</span>
             <div v-show="aboutSelected" class="n-about__selected">
               <PortfolioMenu @close-menu="handleCloseMenu" />
             </div>
@@ -221,7 +220,7 @@ export default {
     & .n-selected {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
 
       & .n-submenu__container {

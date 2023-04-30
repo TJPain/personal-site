@@ -334,7 +334,7 @@ export default {
     grid-template-columns: 1fr;
   }
   .n-submenu__column {
-    padding: 24px 10px 20px 24px;
+    padding: 24px 10px 20px 5px;
     border-right: none;
     border-bottom: 1px solid #e4e4e4;
     &:last-child {
