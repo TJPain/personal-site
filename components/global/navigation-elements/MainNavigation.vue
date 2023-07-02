@@ -1,9 +1,9 @@
 <template>
   <nav class="n-main__navigation">
     <ul class="n-navigation__list">
-      <li class="n-navigation__item">
+      <!-- <li class="n-navigation__item">
         <a class="navigation__text" href="/about/">About</a>
-      </li>
+      </li> -->
       <li class="n-navigation__item">
         <a class="navigation__text" href="/cv/">CV</a>
       </li>

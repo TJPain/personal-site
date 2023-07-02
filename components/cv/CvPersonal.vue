@@ -25,7 +25,7 @@
               alt="an icon of a house"
               class="cv__contact-icon"
             />
-            <p class="cv__contact-text">UK based - I only work remotely</p>
+            <p class="cv__contact-text">Edinburgh based - work remotely</p>
           </div>
           <div class="cv__contact-details">
             <img
@@ -69,27 +69,10 @@
       </div>
       <div class="cv__bio">
         <p class="bio__text">
-          I currently work in a full stack role (predominantly backend) in the Growth
-          Engineering Team at Midnite, an esports gambling company. We build products
-          for user acquisition and retention with Vue.js and TypeScript on the frontend
-          and Python and Flask on the backend. I am also heavily involved in building
-          internal tools for our Trading Team.
+          I am a back-end Software Engineer at Midnite, an esports gambling scale-up, working in the Growth Engineering Team to build products for user acquisition and retention with Python and Flask. I am also heavily involved in building internal tools for our Trading Team. Prior to Midnite, I spent five years building a travel start-up where I was responsible for technology (Python, Django, Vue, JavaScript, and AWS) and product. 
         </p>
         <p class="bio__text">
-          Prior to Midnite, I spent five years building a travel start-up where I
-          was responsible for technology and product. When the pandemic started,
-          I decided to build upon this hands-on development experience with a
-          part-time MSc in Computer Science with Artificial Intelligence, which
-          I have almost completed - my current grade average is 78% (distinction).
-          For the research project I am building an AI for creating high-frequency
-          trading strategies for the EUR/USD currency pair. This deep learning algorithm
-          is built with Python and Tensorflow and runs on AWS with real time data to
-          fully automate trades on Oanda.
-        </p>
-        <p class="bio__text">
-          Most of my experience is with Vue.js and Python including Flask, Django,
-          NumPy, pandas, Matplotlib, SciPy and scikit-learn. I also have some 
-          experience with Java.
+          I am also finishing the research project for my part-time MSc in Computer Science with Artificial Intelligence. For this, I am building a deep learning model for programmatic high-frequency trading of the EUR/USD currency pair. This is built with Python and Tensorflow and runs on AWS with real-time data.
         </p>
       </div>
     </div>

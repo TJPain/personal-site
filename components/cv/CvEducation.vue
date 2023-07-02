@@ -61,12 +61,12 @@ export default {
         {
           institution: 'University of York',
           title: 'MSc Computer Science with Artificial Intelligence',
-          dates: '2020-2022',
+          dates: '2020-2023',
           imgSrc: '/images/cv/logos/york.png',
           imgAlt: 'The University of York logo',
           bullets: [
-            'Current grade average: 78% (distinction) with just the dissertation / research project remaining',
-            'Modules: AI and Machine Learning, Applied AI, Algorithms and Data Structures, Advanced Programming, Big Data Analytics, Computer Architecture and Operating Systems, Computer and Mobile Networks, Software Engineering, and an AI-based research project',
+            'Current grade average: 75.5% (distinction) with only the research project remaining',
+            'Modules: AI and Machine Learning, Applied AI, Algorithms and Data Structures, Advanced Programming, Big Data Analytics, Computer Architecture and Operating Systems, Computer and Mobile Networks, Software Engineering, and an AI-based research project. All modules are Java or Python based.',
             'Built a Python and MySQL ETL and data visualisation application for Advanced Programming',
             'For my research project, I am building an AI for creating high-frequency trading strategies for the EUR/USD currency pair. This deep learning algorithm is built with Python and Tensorflow and runs on AWS with real time-data to fully automate trades on Oanda.'
           ],
