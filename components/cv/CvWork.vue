@@ -43,7 +43,7 @@
           <div v-if="job.achievements" class="jobs__accordion-achievements">
             <ul class="jobs__achievements-list">
               <li v-for="(item, i) in job.achievements" :key="i">
-                <div>{{ item }}</div>
+                {{ item }}
               </li>
             </ul>
           </div>
