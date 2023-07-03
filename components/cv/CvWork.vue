@@ -200,6 +200,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+li {
+  font-family: 'Rubik', sans-serif;
+}
 .cv__work-container {
   width: 100%;
   height: auto;
