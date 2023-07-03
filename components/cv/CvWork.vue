@@ -41,7 +41,6 @@
             <div class="jobs__text" v-html="job.text"></div>
           </div>
           <div v-if="job.achievements" class="jobs__accordion-achievements">
-            <p class="jobs__achievements-title">Key achievements:</p>
             <ul class="jobs__achievements-list">
               <li v-for="(item, i) in job.achievements" :key="i">
                 <div>{{ item }}</div>
