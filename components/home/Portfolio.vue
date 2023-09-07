@@ -67,6 +67,15 @@ export default {
     return {
       portfolio: [
         {
+          title: 'Chat GPT agent with memory microservice',
+          text: 'An OpenAI based conversational agent with a memory microservice using FastAPI',
+          imgSrc: '/images/portfolio/openai-chat-agent.jpg',
+          imgAlt: 'A Python code snippet integrating OpenAI',
+          tags: ['Python', 'FastAPI', 'OpenAi', 'SQL'],
+          gitLink: 'https://github.com/TJPain/chat-gpt-agent-with-memory-microservice',
+          anchor: 'openai',
+        },
+        {
           title: 'High-frequency trading algorithm',
           text: 'I am currently building a deep learning algorithm for high-frequency trading of the EUR/USD currency pair',
           imgSrc: '/images/portfolio/meme-gen.jpg',
@@ -85,15 +94,16 @@ export default {
           anchor: 'etl',
         },
         {
-          title: 'Packed website',
-          html: `<p>I built the Packed website with Nuxt.js using Strapi as a headless CMS. It also used Ghost for the blog.</p>`,
+          title: 'Packed',
+          html: `<p>I built the Packed platform with Python, Django and PostgreSQL, and a Nuxt.js front-end using Strapi as a headless CMS</p>`,
           imgSrc: '/images/portfolio/packed-site.jpg',
           imgAlt: 'A screenshot of the Packed website',
           tags: [
             'Nuxt.js',
             'Strapi',
             'GraphQL',
-            'Vue Apollo',
+            'Djano',
+            'PostgreSQL',
             'AWS',
             'Cloudflare',
           ],
@@ -119,7 +129,7 @@ export default {
           anchor: 'personal',
         },
         {
-          title: 'Python meme generator 😂',
+          title: 'Python meme generator 🤷‍♂️',
           text: `A multimedia command-line and web application to dynamically generate memes, including an image with overlaid text.`,
           imgSrc: '/images/portfolio/meme-gen2.jpg',
           imgAlt: 'A screenshot of the tompa.in website',
@@ -129,7 +139,7 @@ export default {
         },
         {
           title: 'Command line large dataset query tool',
-          text: `The tool etracts JSON data, loads it into a database and allows users to query and filter NASA/JPL's very large near-Earth objects dataset.`,
+          text: `The tool extracts JSON data, loads it into a database and allows users to query and filter NASA/JPL's very large near-Earth objects dataset.`,
           imgSrc: '/images/portfolio/neo.jpg',
           imgAlt: 'A screenshot of the tompa.in website',
           tags: ['Python', 'Various python modules'],
@@ -257,6 +267,7 @@ export default {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
+  line-height: 1.5;
 }
 .portfolio__git {
   position: absolute;

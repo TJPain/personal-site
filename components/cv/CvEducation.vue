@@ -32,7 +32,7 @@
           <div v-if="qual.bullets" class="edu__accordion-achievements">
             <ul class="edu__achievements-list">
               <li v-for="(item, i) in qual.bullets" :key="i">
-                <div>{{ item }}</div>
+                {{ item }}
               </li>
             </ul>
           </div>

@@ -12,7 +12,7 @@
         <div class="btns__container">
           <a href="mailto:hello@tompa.in" class="cv__cta-btn">Say hello</a>
           <a
-            href="/images/cv/tom-pain-2023-cv.pdf"
+            href="/images/cv/tom-pain-cv-jul-23.pdf"
             target="_blank"
             class="cv__cta-btn btn-white"
             >Download CV</a
@@ -38,6 +38,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+li {
+  font-family: 'Rubik', sans-serif;
+}
 .cv__layout-columns {
   display: grid;
   grid-template-columns: 1fr 2fr;

@@ -82,6 +82,14 @@
         <ul class="n-submenu__list">
           <li class="n-submenu__item">
             <a
+              href="https://github.com/TJPain/chat-gpt-agent-with-memory-microservice"
+              target="_blank"
+              class="n-submenu__link n-submenu__link__hover"
+              >Chat GPT agent with memory microservice</a
+            >
+          </li>
+          <li class="n-submenu__item">
+            <a
               href="https://github.com/TJPain/python-flask-meme-generator/"
               target="_blank"
               class="n-submenu__link n-submenu__link__hover"

@@ -101,7 +101,7 @@ export default {
           dates: 'March 2017 - March 2022',
           text: `<p style="margin-bottom: unset">Packed provided a marketplace of trusted and reliable holidays for groups. Pre-covid sales were up to £230k per month, however, covid put the company into a financially difficult position and we decided to close. </p>`,
           achievements: [
-            'Over 2,600 customers and £2.3m in sales',
+            'Over 2,600 customers',
             'Featured in The Times, the Evening Standard, the Metro and Condé Nast',
             'Built the MVP product using Python, Django, GraphQL, Vue with Vue Apollo, and AWS',
             'Managed three overseas contract developers, a contract designer and a mobile app development agency',
@@ -362,7 +362,7 @@ li {
   border-radius: 5px;
   text-align: center;
   padding: 5px;
-  margin-right: 10px;
+  margin: 0 10px 4px 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;

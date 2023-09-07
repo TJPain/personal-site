@@ -29,8 +29,8 @@
           </div>
           <p class="hero__title hero__title-mobile">Hi! I'm Tom Pain</p>
           <p class="hero__text">
-            A full-stack engineer, mainly using Python, including Flask and Django, on the backend
-            and Vue.js along with vanilla JavaScript and TypeScript on the frontend. 
+            A full-stack engineer, mainly using Python, including Flask, FastAPI, and Django, on the backend
+            and Vue.js along with JavaScript and TypeScript on the frontend. 
           </p>
           <div class="hero__dots"></div>
           <img
