@@ -85,11 +85,11 @@ export default {
           title: 'Software engineer',
           href: 'https://www.midnite.com/',
           dates: 'May 2022 - to date',
-          text: `<p style="margin-bottom: unset">Midnite is post-series A ($16m in 2022) dedicated esport and sport betting platform with a focus on user experience. It presents technical challenges given its large volumes of live, risk-adjusted data and operations in regulated environments with two brands, and multiple languages and currencies. Initially hired in a full-stack role (Python, Flask, Vue, TypeScript, SQL, and AWS), I transitioned to a back-end role within the growth engineering team, primarily focused on new product development.</p>`,
+          text: `<p style="margin-bottom: unset">Midnite is post-series A ($22m in 2022-23) esport and sport betting platform with a focus on user experience. It presents technical challenges given its large volumes of live, risk-adjusted data and operations in 11 highly regulated countries with two brands, and multiple languages and currencies. Initially hired in a full-stack role (Python, Flask, Vue, TypeScript, SQL, and AWS), I transitioned to a back-end role within the Growth team, primarily focused on new product development.</p>`,
           achievements: [
-            'Worked in a small team to build our new casino and virtuals products from scratch, defining API contracts with client teams, building cloud-native APIs, and constructing backend logic to support these products. Developed high-capacity services for real-time data transactions, prioritising reliability and responsiveness. Wrote comprehensive unit and integration tests to ensure system stability.',
+            'Worked in a small team to build our new casino and virtuals products from scratch, defining API contracts with client teams, building cloud-native APIs, and constructing backend logic to support these products. Developed high-capacity services for real-time data transactions, prioritising reliability and responsiveness. Within two weeks of launch, casino more than doubled company revenue and virtuals added another 5%.',
             'Full stack development for new welcome and sign-up bonus products to improve customer acquisition',
-            'Building internal tools for our Trading Team for risk management and improved efficiency',
+            'Built a prize allocation service for a free-to-play game, factoring in users’ predicted LTV, recent betting history, and reward accumulation to boost engagement via statistically driven prize selection',
           ],
           tags: ['Python', 'Flask', 'Vue.js', 'TypeScript', 'SQL', 'AWS', 'Docker'],
         },
@@ -101,7 +101,7 @@ export default {
           dates: 'March 2017 - March 2022',
           text: `<p style="margin-bottom: unset">Packed provided a marketplace of trusted and reliable holidays for groups. Pre-covid sales were up to £230k per month, however, covid put the company into a financially difficult position and we decided to close. </p>`,
           achievements: [
-            'Over 2,600 customers',
+            'Over 2,600 customers and £2.3m in sales',
             'Featured in The Times, the Evening Standard, the Metro and Condé Nast',
             'Built the MVP product using Python, Django, GraphQL, Vue with Vue Apollo, and AWS',
             'Managed three overseas contract developers, a contract designer and a mobile app development agency',
@@ -117,7 +117,7 @@ export default {
           imgSrc: '/images/cv/logos/true.jpg',
           imgAlt: 'The True Search logo',
           dates: 'December 2016 - August 2017',
-          text: `<p style="margin-bottom: unset">I worked closely with US and European tier-1 venture capital funds to help them strengthen the boards of their portfolio investments and regularly helped US technology companies scale into EMEA. The role blended long consultation periods with the delivery of high-profile executive search placements across board-level functions (predominantly CTO, CPO, and CMO) in all technology verticals.</p>`,
+          text: `<p style="margin-bottom: unset">I worked closely with US and European tier-1 venture capital funds to help them strengthen the boards of their portfolio investments, regularly helping US technology companies scale into EMEA.</p>`,
         },
         {
           company: 'Oliver James Associates',
@@ -126,7 +126,7 @@ export default {
           imgAlt: 'The Oliver James Associates logo',
           href: 'https://www.oliverjames.com/',
           dates: 'January 2015 - December 2016',
-          text: `<p style="margin-bottom: unset">I was approached by OJA to establish a Digital and Technology desk. On the back of strong sales and bottom-line performance, I started Design and Marketing teams which I managed concurrently. I was promoted three times in two years and managed a team of 14 people.</p>`,
+          text: `<p style="margin-bottom: unset">I built the teams from scratch, was promoted three times in two years and managed 14 people.</p>`,
         },
         {
           company: 'Outgoing',
@@ -135,7 +135,7 @@ export default {
           imgAlt: 'The outgoing logo',
           href: 'https://www.outgoing.co.uk/',
           dates: 'May 2011 - September 2013',
-          text: `<p>I was employed in a sales role but was quickly promoted to Product Manager for the Ski division where I was responsible for the department’s financial performance, delivering all aspects of the passenger experience, managing six full-time staff and up to 110 seasonal staff. Increased passenger numbers from 1,600 in 2010/11 to almost 15,000 passengers in 2012/13, transforming financial performance from a small loss to a net profit of £280,000 for the 2012/13 season.</p>`,
+          text: `<p>I was responsible for the department’s financial performance, delivering all aspects of the passenger experience, and managing six full-time staff and up to 110 seasonal staff. Increased passenger numbers from 1,600 in 2010/11 to almost 15,000 passengers in 2012/13.</p>`,
         },
         {
           others: true,

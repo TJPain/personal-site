@@ -121,6 +121,11 @@ export default {
       ],
       others: [
         {
+          institution: 'AWS',
+          title: 'Cloud Essentials',
+          dates: '2023',
+        },
+        {
           institution: 'Udacity',
           title: 'Python Nanodegree (two-month assessed course)',
           dates: '2021',
