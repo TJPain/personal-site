@@ -69,10 +69,10 @@
       </div>
       <div class="cv__bio">
         <p class="bio__text">
-          I am a back-end Software Engineer at Midnite, an esports gambling scale-up, working in the Growth Engineering Team, primarily focused on new product development. Prior to Midnite, I spent five years building a travel start-up where I was responsible for technology and product.
+          I am a back-end Software Engineer at Midnite, an esports gambling scale-up, working in the Growth Engineering Team with a focus on building new products.
         </p>
         <p class="bio__text">
-          I am also finishing the research project for my part-time MSc in Computer Science with Artificial Intelligence. For this, I am building a deep learning model for programmatic high-frequency trading of the EUR/USD currency pair. This is built with Python and Tensorflow and runs on AWS with real-time data.
+          Prior to Midnite, I spent five years building a travel start-up where I was responsible for technology and product. I am also finishing the research project for my MSc in Computer Science with AI. For this, I am building a deep learning model for programmatic high-frequency currency trading.
         </p>
       </div>
     </div>
