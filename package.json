@@ -16,6 +16,7 @@
     "core-js": "^3.15.1",
     "node-sass": "^6.0.1",
     "nuxt": "^2.15.7",
+    "posthog-js": "^1.116.6",
     "sass-loader": "^10.2.0",
     "vue-fixed-header": "^3.2.15",
     "vue-parallaxy": "^1.1.1",
