@@ -17,7 +17,7 @@
               alt="a briefcase icon"
               class="cv__contact-icon"
             />
-            <p class="cv__contact-text">Full stack engineer</p>
+            <p class="cv__contact-text">Back end engineer</p>
           </div>
           <div class="cv__contact-details">
             <img
@@ -69,10 +69,12 @@
       </div>
       <div class="cv__bio">
         <p class="bio__text">
-          I am a back-end Software Engineer at Midnite, an esports gambling scale-up, working in the Growth Engineering Team with a focus on building new products.
-        </p>
-        <p class="bio__text">
-          Prior to Midnite, I spent five years building a travel start-up where I was responsible for technology and product. I am also finishing the research project for my MSc in Computer Science with AI. For this, I am building a deep learning model for programmatic high-frequency currency trading.
+          I am a back-end Software Engineer at Midnite, a sport and esports
+          gambling scale-up. Prior to Midnite, I spent five years building a
+          travel start-up where I was responsible for technology and product. I
+          am also finishing the research project for my MSc in Computer Science
+          with AI, where I am building a hybrid CNN-LSTM deep learning model for
+          programmatic high-frequency currency trading.
         </p>
       </div>
     </div>
@@ -143,7 +145,7 @@ export default {
   transition: all ease 0.5;
 }
 .contact-link:hover {
-    color: #4f2d87;
+  color: #4f2d87;
 }
 .cv__bio {
   padding: 20px;

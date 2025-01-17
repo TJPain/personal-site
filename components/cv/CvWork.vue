@@ -51,7 +51,7 @@
             <div v-for="(tag, i) in job.tags" :key="i" class="jobs__tag">
               {{ tag }}
             </div>
-        </div>
+          </div>
         </div>
         <div v-else class="jobs__accordion-item-body">
           <div class="jobs__others">
@@ -82,31 +82,43 @@ export default {
           company: 'Midnite',
           imgSrc: '/images/cv/logos/midnite-icon.png',
           imgAlt: 'The Midnite logo',
-          title: 'Software engineer',
+          title: 'Software Engineer (back-end)',
           href: 'https://www.midnite.com/',
           dates: 'May 2022 - to date',
-          text: `<p style="margin-bottom: unset">Midnite is post-series A ($22m in 2022-23) esport and sport betting platform with a focus on user experience. It presents technical challenges given its large volumes of live, risk-adjusted data and operations in 11 highly regulated countries with two brands, and multiple languages and currencies. Initially hired in a full-stack role (Python, Flask, Vue, TypeScript, SQL, and AWS), I transitioned to a back-end role within the Growth team, primarily focused on new product development.</p>`,
+          text: `<p style="margin-bottom: unset">Midnite is post-series A ($32m raised) betting platform with a focus on user experience. Technical challenges arise from the large volume of live, risk-adjusted data; operations in 11 highly regulated countries with two distinct brands; and support for multiple languages, currencies, and rapidly growing scale. Since joining, wagering has grown from $1.3M in my first month to over $60M per month and up to $3.5M per day on peak days.</p>`,
           achievements: [
-            'Worked in a small team to build our new casino and virtuals products from scratch, defining API contracts with client teams, building cloud-native APIs, and constructing backend logic to support these products. Developed high-capacity services for real-time data transactions, prioritising reliability and responsiveness. Within two weeks of launch, casino more than doubled company revenue and virtuals added another 5%.',
-            'Full stack development for new welcome and sign-up bonus products to improve customer acquisition',
-            'Built a prize allocation service for a free-to-play game, factoring in users’ predicted LTV, recent betting history, and reward accumulation to boost engagement via statistically driven prize selection',
+            'I currently lead our first AI personalisation and recommendations product. This has now been rolled out on casino with an almost instant c. 20% increase in 7 and 30 day retention. I am now working on sportsbook personalisation. As part of the work, I refactored our content apis reducing home page latency from over a second to around 300ms while allowing clients to lazy load content.',
+            `Designed and implemented a decoupled, event-driven data pipeline leveraging PostgreSQL's Listen/Notify feature to stream events to Kafka.`,
+            `Worked in a small team to design and build a casino and a virtuals product from scratch. Within two weeks of launch, casino more than doubled company revenue and virtuals added another 5%. Casino achieved $140M in wagering in its first 12 months and now has a run rate of over $1M per day.`,
+            `Built the back-end split testing framework.`,
+            `Full stack development for new welcome and sign-up bonus products to improve customer acquisition.`,
+            `Engineered an algorithm for dynamic pricing adjustments based on risk assessment and bet volumes.`,
+            `Built a prize allocation service for a free-to-play game, factoring in users’ predicted LTV, recent betting history, and reward accumulation to boost engagement via statistically driven prize selection.`,
           ],
-          tags: ['Python', 'Flask', 'Vue.js', 'TypeScript', 'SQL', 'AWS', 'Docker'],
+          tags: [
+            'Python',
+            'Flask',
+            'SQLAlchemy',
+            'AWS',
+            'Docker',
+            'Vue.js',
+            'TypeScript',
+          ],
         },
         {
           company: 'Packed',
           imgSrc: '/images/cv/logos/packed-icon.jpg',
           imgAlt: 'The Packed logo',
-          title: 'Co-Founder and software engineer',
+          title: 'Co-Founder and Software Engineer (full stack)',
           dates: 'March 2017 - March 2022',
-          text: `<p style="margin-bottom: unset">Packed provided a marketplace of trusted and reliable holidays for groups. Pre-covid sales were up to £230k per month, however, covid put the company into a financially difficult position and we decided to close. </p>`,
+          text: `<p style="margin-bottom: unset">Packed provided a marketplace of trusted and reliable holidays for groups.</p>`,
           achievements: [
-            'Over 2,600 customers and £2.3m in sales',
             'Featured in The Times, the Evening Standard, the Metro and Condé Nast',
-            'Built the MVP product using Python, Django, GraphQL, Vue with Vue Apollo, and AWS',
-            'Managed three overseas contract developers, a contract designer and a mobile app development agency',
-            'Designed and launched a React Native app with over 10,000 users across iOS and Android',
+            'Built the MVP product using Python / Django, GraphQL, Vue, and AWS integrating Twilio, Google Dialogflow, and WorldPay for payments',
+            'Managed three overseas contract developers, a contract designer, and a mobile app development agency',
+            'Designed and launched a React Native app with 10,000+ users across iOS and Android',
             'Responsible for the analytics stack and technical SEO, growing organic traffic to >10k users per month',
+            'Achieved sales of up to £230k per month, amassed 2,600 customers, and generated £2.3m in sales before closure due to COVID-19',
           ],
           tags: ['Python', 'Django', 'Vue.js', 'Cloudflare', 'SQL', 'AWS'],
         },
@@ -121,7 +133,8 @@ export default {
         },
         {
           company: 'Oliver James Associates',
-          title: 'Associate Director',
+          title:
+            'Head of Digital, Marketing and Design & Development Practices',
           imgSrc: '/images/cv/logos/oja.png',
           imgAlt: 'The Oliver James Associates logo',
           href: 'https://www.oliverjames.com/',

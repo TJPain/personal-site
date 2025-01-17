@@ -41,7 +41,7 @@
           <div class="edu__others">
             <ul v-for="(other, i) in others" :key="i" class="edu__others-item">
               <li class="edu__others-title">
-                {{ other.dates }}: {{ other.institution }} - {{ other.title }}
+                {{ other.institution }} - {{ other.title }}
               </li>
             </ul>
           </div>
@@ -61,14 +61,13 @@ export default {
         {
           institution: 'University of York',
           title: 'MSc Computer Science with Artificial Intelligence',
-          dates: '2020-2023',
+          dates: '2020-2024',
           imgSrc: '/images/cv/logos/york.png',
           imgAlt: 'The University of York logo',
           bullets: [
             'Current grade average: 75.5% (distinction) with only the research project remaining',
             'Modules: AI and Machine Learning, Applied AI, Algorithms and Data Structures, Advanced Programming, Big Data Analytics, Computer Architecture and Operating Systems, Computer and Mobile Networks, Software Engineering, and an AI-based research project. All modules are Java or Python based.',
-            'Built a Python and MySQL ETL and data visualisation application for Advanced Programming',
-            'For my research project, I am building an AI for creating high-frequency trading strategies for the EUR/USD currency pair. This deep learning algorithm is built with Python and Tensorflow and runs on AWS with real time-data to fully automate trades on Oanda.'
+            'Building a deep learning model for programmatic high-frequency Forex trading for my research project',
           ],
         },
         {
@@ -111,9 +110,6 @@ export default {
           imgSrc: '/images/cv/logos/durham.png',
           imgAlt: 'The Durham University logo',
           grade: '2:1',
-          bullets: [
-            'College life member, college Vice President in final year and Entertainments Officer in second year. President of the college Ski Club for two years and organiser of two ski trips. Represented the university at rugby and squash',
-          ],
         },
         {
           others: true,
@@ -123,27 +119,22 @@ export default {
         {
           institution: 'AWS',
           title: 'Cloud Essentials',
-          dates: '2023',
         },
         {
           institution: 'Udacity',
           title: 'Python Nanodegree (two-month assessed course)',
-          dates: '2021',
         },
         {
           institution: 'Microsoft',
           title: 'Azure AI Fundamentals',
-          dates: '2021',
         },
         {
           institution: 'Udemy',
           title: 'Vue.js The Complete Guide',
-          dates: '2020',
         },
         {
           institution: 'Codecademy',
           title: 'Web Development Path with React',
-          dates: '2020',
         },
       ],
       tab0: false,

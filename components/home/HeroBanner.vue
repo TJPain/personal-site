@@ -29,11 +29,12 @@
           </div>
           <p class="hero__title hero__title-mobile">Hi! I'm Tom Pain</p>
           <p class="hero__text">
-            I'm a full-stack engineer with experience in scaling consumer web applications.
+            I'm a software engineer with experience in scaling consumer web
+            applications.
           </p>
           <p class="hero__text">
-            I mainly use Python on the back end, including frameworks like Flask, FastAPI,
-            and Django, and Vue.js with JavaScript and TypeScript on the front end.
+            I mainly use Python on the back end, including frameworks like
+            FastAPI and Flask and Vue.js with TypeScript on the front end.
           </p>
           <div class="hero__dots"></div>
           <img

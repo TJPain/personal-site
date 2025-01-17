@@ -12,7 +12,7 @@
         <div class="btns__container">
           <a href="mailto:hello@tompa.in" class="cv__cta-btn">Say hello</a>
           <a
-            href="/images/cv/tom-pain-cv-mar-24.pdf"
+            href="/images/cv/tom-pain-cv.pdf"
             target="_blank"
             class="cv__cta-btn btn-white"
             >Download CV</a
